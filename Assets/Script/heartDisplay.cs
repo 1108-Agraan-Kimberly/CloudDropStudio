@@ -3,26 +3,25 @@ using UnityEngine.UI;
 
 public class heartDisplay : MonoBehaviour
 {
-    public int heart;
-    public int maxHearts;
+    public Health healthScript;
     public Image[] hearts_display;
 
-    void Start()
+    private void Start()
     {
-        
+        healthScript.OnHealthChanged += UpdateHeartDisplay;
+        UpdateHeartDisplay(healthScript.currentHealth);
     }
 
-    void Update()
+    private void OnDestroy()
     {
-        for(int i = 0;  i < hearts_display.Length; i++){
-            if(i < maxHearts)
-            {
-                hearts_display[i].enabled = true;
-            } 
-            else
-            {
-                hearts_display[i].enabled = false;
-            }
+        healthScript.OnHealthChanged -= UpdateHeartDisplay;
+    }
+
+    private void UpdateHeartDisplay(int currentHealth)
+    {
+        for (int i = 0; i < hearts_display.Length; i++)
+        {
+            hearts_display[i].enabled = i < currentHealth;
         }
     }
 }
