@@ -1,34 +1,25 @@
 fileFormatVersion: 2
-guid: 181219f59d0378444952e36484545d17
+guid: 46589f91a5a2813419006966e75cba26
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6473921428105971981
-    second: julian_0
+      213: -1121471255454509191
+    second: BKGbook_0
   - first:
-      213: -4941021455336647785
-    second: julian_1
+      213: -1457188274616155671
+    second: BKGbook_1
   - first:
-      213: 8942409246557878575
-    second: julian_2
+      213: 8369899097849138160
+    second: BKGbook_2
   - first:
-      213: 6522455287683045233
-    second: julian_3
+      213: -3929299541075517268
+    second: BKGbook_3
   - first:
-      213: -7344935238002235426
-    second: julian_4
+      213: -8142270013139803627
+    second: BKGbook_4
   - first:
-      213: 138603822237292246
-    second: julian_5
-  - first:
-      213: -4780398517455319228
-    second: julian_6
-  - first:
-      213: -3612745555900239208
-    second: julian_7
-  - first:
-      213: 5813599949170756382
-    second: julian_8
+      213: -2563823877206201882
+    second: BKGbook_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,10 +63,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -99,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -120,216 +111,137 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: julian_0
+      name: BKGbook_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 530
-        width: 324
-        height: 550
+        x: 124
+        y: 280
+        width: 1396
+        height: 4148
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d09cb021d3df7d950800000000000000
-      internalID: 6473921428105971981
+      spriteID: 97792d0c5dbbf60f0800000000000000
+      internalID: -1121471255454509191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: julian_1
+      name: BKGbook_1
       rect:
         serializedVersion: 2
-        x: 140
-        y: 0
-        width: 270
-        height: 556
-      alignment: 9
-      pivot: {x: 0.455064, y: 0.13267288}
+        x: 1424
+        y: 3824
+        width: 1821
+        height: 785
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 793531f3a27fd6bb0800000000000000
-      internalID: -4941021455336647785
+      spriteID: 9e1c3a81cf607cbe0800000000000000
+      internalID: -1457188274616155671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: julian_2
+      name: BKGbook_2
       rect:
         serializedVersion: 2
-        x: 331
-        y: 492
-        width: 324
-        height: 550
+        x: 3762
+        y: 3824
+        width: 1888
+        height: 785
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f293041b4d1d91c70800000000000000
-      internalID: 8942409246557878575
+      spriteID: 0fb092542ead72470800000000000000
+      internalID: 8369899097849138160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: julian_3
+      name: BKGbook_3
       rect:
         serializedVersion: 2
-        x: 653
-        y: 472
-        width: 271
-        height: 570
+        x: 5610
+        y: 350
+        width: 1346
+        height: 4078
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 17757b5d68a648a50800000000000000
-      internalID: 6522455287683045233
+      spriteID: ca0a61eb2e25879c0800000000000000
+      internalID: -3929299541075517268
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: julian_4
+      name: BKGbook_4
       rect:
         serializedVersion: 2
-        x: 927
-        y: 472
-        width: 270
-        height: 570
+        x: 1699
+        y: 259
+        width: 804
+        height: 2497
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed7a0a0f05c811a90800000000000000
-      internalID: -7344935238002235426
+      spriteID: 512ac790098d00f80800000000000000
+      internalID: -8142270013139803627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: julian_5
+      name: BKGbook_5
       rect:
         serializedVersion: 2
-        x: 1108
-        y: 14
-        width: 334
-        height: 557
+        x: 4757
+        y: 259
+        width: 812
+        height: 2497
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d617f4217b6ce100800000000000000
-      internalID: 138603822237292246
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: julian_6
-      rect:
-        serializedVersion: 2
-        x: 1256
-        y: 513
-        width: 324
-        height: 550
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 44f854240ec98adb0800000000000000
-      internalID: -4780398517455319228
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: julian_7
-      rect:
-        serializedVersion: 2
-        x: 1465
-        y: 14
-        width: 345
-        height: 552
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 892f1bcde03fcddc0800000000000000
-      internalID: -3612745555900239208
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: julian_8
-      rect:
-        serializedVersion: 2
-        x: 1587
-        y: 513
-        width: 325
-        height: 550
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e1b4d8c1a5e0ea050800000000000000
-      internalID: 5813599949170756382
+      spriteID: 6e9a57474c77b6cd0800000000000000
+      internalID: -2563823877206201882
       vertices: []
       indices: 
       edges: []
@@ -338,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a8addd30a6c6a634f9983171c1d0064c
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -348,15 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      julian_0: 6473921428105971981
-      julian_1: -4941021455336647785
-      julian_2: 8942409246557878575
-      julian_3: 6522455287683045233
-      julian_4: -7344935238002235426
-      julian_5: 138603822237292246
-      julian_6: -4780398517455319228
-      julian_7: -3612745555900239208
-      julian_8: 5813599949170756382
+      BKGbook_0: -1121471255454509191
+      BKGbook_1: -1457188274616155671
+      BKGbook_2: 8369899097849138160
+      BKGbook_3: -3929299541075517268
+      BKGbook_4: -8142270013139803627
+      BKGbook_5: -2563823877206201882
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

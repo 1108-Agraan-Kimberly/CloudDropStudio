@@ -9,8 +9,6 @@ public class Movement : MonoBehaviour
   private float dashTimeRemaining;
   private bool isDashing;
 
-  public Transform aim;
-
   private void Update()
   {
     float horizontal = Input.GetAxisRaw("Horizontal");
@@ -42,18 +40,9 @@ public class Movement : MonoBehaviour
     {
       transform.position += direction * speed * Time.deltaTime;
     }
-
-    UpdateAimRotation();
   }
 
-  private void UpdateAimRotation()
-  {
-    Vector3 mousePosition = Input.mousePosition;
-    mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
-    Vector3 aimDirection = mousePosition - aim.position;
-    float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
-    aim.rotation = Quaternion.Euler(0, 0, angle);
-  }
+
 }
 
 

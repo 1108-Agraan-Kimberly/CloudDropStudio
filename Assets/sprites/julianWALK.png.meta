@@ -1,37 +1,40 @@
 fileFormatVersion: 2
-guid: 55a914ace4472c84398eec4a1dd66805
+guid: 9e4566ce83f337c459f3fe84b385ac12
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4317077269579653727
-    second: Untitled_Artwork(7)_0
+      213: -8344336891633515172
+    second: julianWALK_0
   - first:
-      213: 3247014694342104972
-    second: Untitled_Artwork(7)_1
+      213: 7886345554383969055
+    second: julianWALK_1
   - first:
-      213: -7360206416936406169
-    second: Untitled_Artwork(7)_2
+      213: 5961212358010630395
+    second: julianWALK_2
   - first:
-      213: -6143575158915575248
-    second: Untitled_Artwork(7)_3
+      213: -4073302857775289557
+    second: julianWALK_3
   - first:
-      213: -4783918391700324684
-    second: Untitled_Artwork(7)_4
+      213: 6283527596568367969
+    second: julianWALK_4
   - first:
-      213: 5439117622179901262
-    second: Untitled_Artwork(7)_5
+      213: -2560314758897879500
+    second: julianWALK_5
   - first:
-      213: -2171227699307523571
-    second: Untitled_Artwork(7)_6
+      213: 4438049946833598706
+    second: julianWALK_6
   - first:
-      213: -4694262047131752991
-    second: Untitled_Artwork(7)_7
+      213: 3465681581363007354
+    second: julianWALK_7
   - first:
-      213: 2855340672100653275
-    second: Untitled_Artwork(7)_8
+      213: 4504731520394085732
+    second: julianWALK_8
   - first:
-      213: -2947132224171710481
-    second: Untitled_Artwork(7)_9
+      213: 2540948333895903199
+    second: julianWALK_9
+  - first:
+      213: -4137063043782069414
+    second: julianWALK_10
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,7 +105,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -127,221 +130,243 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled_Artwork(7)_0
+      name: julianWALK_0
       rect:
         serializedVersion: 2
         x: 35
         y: 587
         width: 292
         height: 482
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5138501, y: 0.042716}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1ad9ace9819a614c0800000000000000
-      internalID: -4317077269579653727
+      spriteID: c554ff7aec5f23c80800000000000000
+      internalID: -8344336891633515172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled_Artwork(7)_1
+      name: julianWALK_1
       rect:
         serializedVersion: 2
         x: 334
         y: 566
         width: 295
         height: 499
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5342731, y: 0.0339808}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c871cbc39a6bf0d20800000000000000
-      internalID: 3247014694342104972
+      spriteID: f1b99018f7de17d60800000000000000
+      internalID: 7886345554383969055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled_Artwork(7)_2
+      name: julianWALK_2
       rect:
         serializedVersion: 2
         x: 639
         y: 570
         width: 292
         height: 495
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.034300033}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 76374f4824b4bd990800000000000000
-      internalID: -7360206416936406169
+      spriteID: bf074e54e0b7ab250800000000000000
+      internalID: 5961212358010630395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled_Artwork(7)_3
+      name: julianWALK_3
       rect:
         serializedVersion: 2
         x: 942
         y: 570
         width: 296
         height: 498
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5068314, y: 0.0371057}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0325ce961f2adbaa0800000000000000
-      internalID: -6143575158915575248
+      spriteID: b2b68b3d1a8b877c0800000000000000
+      internalID: -4073302857775289557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled_Artwork(7)_4
+      name: julianWALK_4
       rect:
         serializedVersion: 2
         x: 1254
         y: 585
         width: 292
         height: 482
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.042716127}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4be7e3ca19b1c9db0800000000000000
-      internalID: -4783918391700324684
+      spriteID: 16352d9be03933750800000000000000
+      internalID: 6283527596568367969
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled_Artwork(7)_5
+      name: julianWALK_5
       rect:
         serializedVersion: 2
         x: 1562
         y: 583
         width: 291
         height: 494
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.50694877, y: 0.041544307}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e4fa991e8a0ab7b40800000000000000
-      internalID: 5439117622179901262
+      spriteID: 436b3baba4fe77cd0800000000000000
+      internalID: -2560314758897879500
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled_Artwork(7)_6
+      name: julianWALK_6
       rect:
         serializedVersion: 2
         x: 201
         y: 0
         width: 257
         height: 539
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.45765918, y: 0.022277819}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d02594049ef3ed1e0800000000000000
-      internalID: -2171227699307523571
+      spriteID: 2f83570b9ee179d30800000000000000
+      internalID: 4438049946833598706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled_Artwork(7)_7
+      name: julianWALK_7
       rect:
         serializedVersion: 2
         x: 470
         y: 0
         width: 255
         height: 535
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5256723, y: 0.02302932}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1e52d161a81aadeb0800000000000000
-      internalID: -4694262047131752991
+      spriteID: a7f81c94903981030800000000000000
+      internalID: 3465681581363007354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled_Artwork(7)_8
+      name: julianWALK_8
       rect:
         serializedVersion: 2
         x: 730
         y: 0
         width: 333
         height: 531
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.44119784, y: 0.02064188}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd8d849863530a720800000000000000
-      internalID: 2855340672100653275
+      spriteID: 46548916375048e30800000000000000
+      internalID: 4504731520394085732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled_Artwork(7)_9
+      name: julianWALK_9
       rect:
         serializedVersion: 2
         x: 1069
         y: 0
         width: 333
         height: 528
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.53883743, y: 0.016099747}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fe763205bdea917d0800000000000000
-      internalID: -2947132224171710481
+      spriteID: fd76c721c03434320800000000000000
+      internalID: 2540948333895903199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: julianWALK_10
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 5
+        width: 257
+        height: 528
+      alignment: 9
+      pivot: {x: 0.47939482, y: 0.026073502}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5339fda4133696c0800000000000000
+      internalID: -4137063043782069414
       vertices: []
       indices: 
       edges: []
@@ -350,7 +375,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 838da8492565f7e40a602f37997aad89
     internalID: 0
     vertices: []
     indices: 
@@ -360,16 +385,17 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Untitled_Artwork(7)_0: -4317077269579653727
-      Untitled_Artwork(7)_1: 3247014694342104972
-      Untitled_Artwork(7)_2: -7360206416936406169
-      Untitled_Artwork(7)_3: -6143575158915575248
-      Untitled_Artwork(7)_4: -4783918391700324684
-      Untitled_Artwork(7)_5: 5439117622179901262
-      Untitled_Artwork(7)_6: -2171227699307523571
-      Untitled_Artwork(7)_7: -4694262047131752991
-      Untitled_Artwork(7)_8: 2855340672100653275
-      Untitled_Artwork(7)_9: -2947132224171710481
+      julianWALK_0: -8344336891633515172
+      julianWALK_1: 7886345554383969055
+      julianWALK_10: -4137063043782069414
+      julianWALK_2: 5961212358010630395
+      julianWALK_3: -4073302857775289557
+      julianWALK_4: 6283527596568367969
+      julianWALK_5: -2560314758897879500
+      julianWALK_6: 4438049946833598706
+      julianWALK_7: 3465681581363007354
+      julianWALK_8: 4504731520394085732
+      julianWALK_9: 2540948333895903199
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
