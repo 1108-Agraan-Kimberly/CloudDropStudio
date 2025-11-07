@@ -28,21 +28,35 @@ public class player_atk : MonoBehaviour
     {
         Collider2D[] Enemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
-        if (Enemies.Length > 0)
+        foreach (Collider2D enemy in Enemies)
         {
-            var eh = Enemies[0].GetComponent<enemy_health>();
+            // Try normal enemy first
+            var eh = enemy.GetComponent<enemy_health>();
             if (eh != null)
+            {
                 eh.ChangeHealth(-attackDamage);
-            else
-                Debug.LogWarning("player_atk: enemy_health component missing on enemy.");
+                continue;
+            }
+
+            // Try boss enemy
+            var bh = enemy.GetComponent<BossHealth>();
+            if (bh != null)
+            {
+                bh.ChangeHealth(-attackDamage);
+                continue;
+            }
+
+            Debug.LogWarning($"player_atk: No health component found on {enemy.name}");
         }
-        // only start coroutine if we have a SpriteRenderer
+
         if (opacity != null)
         {
             StartCoroutine(ShowAttackTransparency());
         }
+
         Debug.Log("Player Attack!");
     }
+
 
     private IEnumerator ShowAttackTransparency()
     {

@@ -1,49 +1,82 @@
 using UnityEngine;
 
-public class enemyFollow : MonoBehaviour
+public class EnemyFollow : MonoBehaviour
 {
-    private Rigidbody2D rigidbody;
+    private Rigidbody2D rb;
     private Transform player;
 
-    public float speed;
-    private bool isChasing;
+    public float speed = 3f;
+    private bool isChasing = false;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public float chargeSpeed = 8f;
+    public float chargeDuration = 1f;
+    public float chargeCooldown = 4f;
+
+    private bool isCharging = false;
+    private float chargeTimer = 0f;
+    private float cooldownTimer = 0f;
+
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
-
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (isChasing = true)
+        if (!isChasing || player == null)
         {
-            Vector2 direction = (player.position - transform.position).normalized;
-        rigidbody.linearVelocity = direction * speed;
+            rb.linearVelocity = Vector2.zero;
+            return;
         }
+
+        // Handle cooldowns
+        if (isCharging)
+        {
+            chargeTimer -= Time.fixedDeltaTime;
+            if (chargeTimer <= 0f)
+            {
+                isCharging = false;
+                cooldownTimer = chargeCooldown;
+            }
+        }
+        else
+        {
+            if (cooldownTimer > 0f)
+            {
+                cooldownTimer -= Time.fixedDeltaTime;
+            }
+            else
+            {
+                // Randomly decide to charge
+                if (Random.value < 0.01f) // ~1% chance per frame
+                {
+                    isCharging = true;
+                    chargeTimer = chargeDuration;
+                }
+            }
+        }
+
+        float currentSpeed = isCharging ? chargeSpeed : speed;
+        Vector2 direction = (player.position - transform.position).normalized;
+        rb.linearVelocity = direction * currentSpeed;
     }
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.CompareTag("Player"))
         {
-            if (player == null)
-            {
-                player = collision.transform;
-            }
+            player = collision.transform;
             isChasing = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.CompareTag("Player"))
         {
-            rigidbody.linearVelocity = Vector2.zero;
             isChasing = false;
+            rb.linearVelocity = Vector2.zero;
         }
     }
 }
