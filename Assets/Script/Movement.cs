@@ -9,6 +9,8 @@ public class Movement : MonoBehaviour
   private float dashTimeRemaining;
   private bool isDashing;
 
+  public player_atk playerAtk; 
+
   private void Update()
   {
     float horizontal = Input.GetAxisRaw("Horizontal");
@@ -39,6 +41,11 @@ public class Movement : MonoBehaviour
     else
     {
       transform.position += direction * speed * Time.deltaTime;
+    }
+
+    if(Input.GetMouseButtonDown(0))
+    {
+      playerAtk.Attack(); //call the Attack method from player_atk script
     }
   }
 
