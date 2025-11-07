@@ -8,8 +8,16 @@ public class Movement : MonoBehaviour
 
   private float dashTimeRemaining;
   private bool isDashing;
+  private Vector3 lastDirection = Vector3.right;
 
+  private SpriteRenderer SpriteRenderer;
   public player_atk playerAtk; 
+
+
+  private void Awake()
+  {
+    SpriteRenderer = GetComponent<SpriteRenderer>();
+  }
 
   private void Update()
   {
@@ -20,8 +28,15 @@ public class Movement : MonoBehaviour
     if (direction.magnitude > 0)
     {
       direction.Normalize();
-    }
+      lastDirection = direction;
 
+    if(horizontal != 0)
+      {
+        Flip(horizontal);
+      }
+
+    }
+  
     if (Input.GetKeyDown(KeyCode.Space) && !isDashing) // Dash input
     {
       isDashing = true;
@@ -45,11 +60,27 @@ public class Movement : MonoBehaviour
 
     if(Input.GetMouseButtonDown(0))
     {
-      playerAtk.Attack(); //call the Attack method from player_atk script
+      playerAtk?.Attack(); //call the Attack method from player_atk script
+    }
+  }
+
+  private void Flip(float horizontal)
+  {
+    if(SpriteRenderer != null)
+    {
+      SpriteRenderer.flipX = horizontal < 0 ;
+    }
+    else
+    {
+      Vector3 scale = transform.localScale;
+      scale.x = (horizontal < 0) ? -Mathf.Abs(scale.x) : Mathf.Abs(scale.x);
+      transform.localScale = scale;
+    }
+        
     }
   }
 
 
-}
+
 
 
