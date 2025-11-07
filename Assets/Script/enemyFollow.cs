@@ -21,18 +21,19 @@ public class enemyFollow : MonoBehaviour
         if (isChasing = true)
         {
             Vector2 direction = (player.position - transform.position).normalized;
-            rigidbody.linearVelocity = direction * speed;
+        rigidbody.linearVelocity = direction * speed;
         }
     }
 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
-            if(player == null)
+            if (player == null)
             {
                 player = collision.transform;
-            }   
+            }
             isChasing = true;
         }
     }
