@@ -1384,6 +1384,10 @@ PrefabInstance:
       propertyPath: m_Points.Array.data[6].y
       value: -10.332001
       objectReference: {fileID: 0}
+    - target: {fileID: 3852825202087096430, guid: 3e715441710387d439122ce637dbdde2, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2017906210}
     - target: {fileID: 6255781697094154507, guid: 3e715441710387d439122ce637dbdde2, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.26067725
@@ -2347,6 +2351,10 @@ PrefabInstance:
       propertyPath: m_Points.Array.data[22].y
       value: -8.145269
       objectReference: {fileID: 0}
+    - target: {fileID: 3852825202087096430, guid: 3e715441710387d439122ce637dbdde2, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2017906210}
     - target: {fileID: 6103031060577943612, guid: 3e715441710387d439122ce637dbdde2, type: 3}
       propertyPath: m_FlipX
       value: 1
