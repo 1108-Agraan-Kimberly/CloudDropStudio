@@ -1,85 +1,83 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Movement : MonoBehaviour
 {
-  public float speed;
-  public float dashSpeed;
-  public float dashDuration;
+  [SerializeField] private float speed = 5f;
+  [SerializeField] private float dashSpeed = 15f;
+  [SerializeField] private float dashDuration = 0.5f;
 
   private float dashTimeRemaining;
   private bool isDashing;
-  private Vector3 lastDirection = Vector3.right;
 
-  private SpriteRenderer SpriteRenderer;
-  public player_atk playerAtk; 
+  private Vector2 moveInput;
+  private Rigidbody2D rb;
+  private Animator animator;
 
 
-  private void Awake()
+  //public player_atk playerAtk; 
+
+  void Start() 
   {
-    SpriteRenderer = GetComponent<SpriteRenderer>();
+    rb = GetComponent<Rigidbody2D>();
+    animator = GetComponent<Animator>();
   }
 
   private void Update()
   {
-    float horizontal = Input.GetAxisRaw("Horizontal");
-    float vertical = Input.GetAxisRaw("Vertical");
-
-    Vector3 direction = new Vector3(horizontal, vertical);
-    if (direction.magnitude > 0)
+    if(isDashing)
     {
-      direction.Normalize();
-      lastDirection = direction;
-
-    if(horizontal != 0)
-      {
-        Flip(horizontal);
-      }
-
-    }
-  
-    if (Input.GetKeyDown(KeyCode.Space) && !isDashing) // Dash input
-    {
-      isDashing = true;
-      dashTimeRemaining = dashDuration;
-    }
-
-    if (isDashing)
-    {
-      transform.position += direction * dashSpeed * Time.deltaTime;
       dashTimeRemaining -= Time.deltaTime;
-
-      if (dashTimeRemaining <= 0)
+      if(dashTimeRemaining <= 0f)
       {
         isDashing = false;
       }
     }
-    else
-    {
-      transform.position += direction * speed * Time.deltaTime;
-    }
 
-    if(Input.GetMouseButtonDown(0))
-    {
-      playerAtk?.Attack(); //call the Attack method from player_atk script
-    }
   }
 
-  private void Flip(float horizontal)
+  private void FixedUpdate()
   {
-    if(SpriteRenderer != null)
+    if(isDashing)
     {
-      SpriteRenderer.flipX = horizontal < 0 ;
+      rb.linearVelocity = moveInput.normalized * dashSpeed;
     }
     else
     {
-      Vector3 scale = transform.localScale;
-      scale.x = (horizontal < 0) ? -Mathf.Abs(scale.x) : Mathf.Abs(scale.x);
-      transform.localScale = scale;
-    }
-        
+      rb.linearVelocity = moveInput.normalized * speed;
     }
   }
 
+  public void Move(InputAction.CallbackContext context)
+  {
+    moveInput = context.ReadValue<Vector2>();
+
+    if(context.performed)
+    {
+      animator.SetBool("isWalking",true);
+    }
+    else if(context.canceled)
+    {
+      animator.SetBool("isWalking",false);
+      animator.SetFloat("LastInputX", moveInput.x);
+      animator.SetFloat("LastInputY", moveInput.y);
+      moveInput = Vector2.zero;
+    }
+
+    animator.SetFloat("InputX", moveInput.x);
+    animator.SetFloat("InputY", moveInput.y);
+  }
+
+  public void Dash(InputAction.CallbackContext context)
+  {
+    if(context.performed && !isDashing && moveInput != Vector2.zero)
+    {
+      isDashing = true;
+      dashTimeRemaining = dashDuration;
+    }
+  }
+
+}
 
 
 

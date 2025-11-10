@@ -35,6 +35,12 @@ TextureImporter:
   - first:
       213: -4137063043782069414
     second: julianWALK_10
+  - first:
+      213: -5661378824215792430
+    second: julianWALK_11
+  - first:
+      213: -858319730231513880
+    second: julianWALK_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -81,7 +87,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,7 +111,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -133,12 +139,12 @@ TextureImporter:
       name: julianWALK_0
       rect:
         serializedVersion: 2
-        x: 35
-        y: 587
-        width: 292
-        height: 482
+        x: 10
+        y: 662
+        width: 322
+        height: 380
       alignment: 9
-      pivot: {x: 0.5138501, y: 0.042716}
+      pivot: {x: 0.5062798, y: 0.063648425}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -155,12 +161,12 @@ TextureImporter:
       name: julianWALK_1
       rect:
         serializedVersion: 2
-        x: 334
-        y: 566
-        width: 295
-        height: 499
+        x: 331
+        y: 664
+        width: 322
+        height: 394
       alignment: 9
-      pivot: {x: 0.5342731, y: 0.0339808}
+      pivot: {x: 0.5, y: 0.07915315}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -177,12 +183,12 @@ TextureImporter:
       name: julianWALK_2
       rect:
         serializedVersion: 2
-        x: 639
-        y: 570
-        width: 292
-        height: 495
+        x: 653
+        y: 660
+        width: 316
+        height: 386
       alignment: 9
-      pivot: {x: 0.5, y: 0.034300033}
+      pivot: {x: 0.5, y: 0.070752546}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -199,12 +205,12 @@ TextureImporter:
       name: julianWALK_3
       rect:
         serializedVersion: 2
-        x: 942
-        y: 570
-        width: 296
-        height: 498
+        x: 971
+        y: 648
+        width: 316
+        height: 393
       alignment: 9
-      pivot: {x: 0.5068314, y: 0.0371057}
+      pivot: {x: 0.5126777, y: 0.07075239}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -221,12 +227,12 @@ TextureImporter:
       name: julianWALK_4
       rect:
         serializedVersion: 2
-        x: 1254
-        y: 585
-        width: 292
-        height: 482
+        x: 1289
+        y: 648
+        width: 314
+        height: 394
       alignment: 9
-      pivot: {x: 0.5, y: 0.042716127}
+      pivot: {x: 0.5126381, y: 0.06888871}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -243,12 +249,12 @@ TextureImporter:
       name: julianWALK_5
       rect:
         serializedVersion: 2
-        x: 1562
-        y: 583
-        width: 291
-        height: 494
+        x: 1604
+        y: 671
+        width: 316
+        height: 376
       alignment: 9
-      pivot: {x: 0.50694877, y: 0.041544307}
+      pivot: {x: 0.51907635, y: 0.06364826}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -265,12 +271,12 @@ TextureImporter:
       name: julianWALK_6
       rect:
         serializedVersion: 2
-        x: 201
-        y: 0
-        width: 257
-        height: 539
+        x: 36
+        y: 169
+        width: 236
+        height: 383
       alignment: 9
-      pivot: {x: 0.45765918, y: 0.022277819}
+      pivot: {x: 0.5, y: 0.082905225}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -287,12 +293,12 @@ TextureImporter:
       name: julianWALK_7
       rect:
         serializedVersion: 2
-        x: 470
-        y: 0
-        width: 255
-        height: 535
+        x: 270
+        y: 170
+        width: 293
+        height: 381
       alignment: 9
-      pivot: {x: 0.5256723, y: 0.02302932}
+      pivot: {x: 0.4999999, y: 0.08071575}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -309,12 +315,12 @@ TextureImporter:
       name: julianWALK_8
       rect:
         serializedVersion: 2
-        x: 730
-        y: 0
-        width: 333
-        height: 531
+        x: 582
+        y: 191
+        width: 289
+        height: 378
       alignment: 9
-      pivot: {x: 0.44119784, y: 0.02064188}
+      pivot: {x: 0.48600605, y: 0.07203864}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -331,12 +337,12 @@ TextureImporter:
       name: julianWALK_9
       rect:
         serializedVersion: 2
-        x: 1069
-        y: 0
-        width: 333
-        height: 528
+        x: 871
+        y: 203
+        width: 249
+        height: 378
       alignment: 9
-      pivot: {x: 0.53883743, y: 0.016099747}
+      pivot: {x: 0.595533, y: 0.070903584}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -353,12 +359,12 @@ TextureImporter:
       name: julianWALK_10
       rect:
         serializedVersion: 2
-        x: 1477
-        y: 5
-        width: 257
-        height: 528
+        x: 1122
+        y: 193
+        width: 253
+        height: 398
       alignment: 9
-      pivot: {x: 0.47939482, y: 0.026073502}
+      pivot: {x: 0.3561336, y: 0.068140805}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -371,11 +377,55 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: julianWALK_11
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 193
+        width: 259
+        height: 398
+      alignment: 9
+      pivot: {x: 0.35165912, y: 0.057979412}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d4f2b364fdbe61b0800000000000000
+      internalID: -5661378824215792430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: julianWALK_12
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 193
+        width: 254
+        height: 398
+      alignment: 9
+      pivot: {x: 0.37262252, y: 0.057979412}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ec67dfb0c2a614f0800000000000000
+      internalID: -858319730231513880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 838da8492565f7e40a602f37997aad89
+    spriteID: bbd8c2b9219587c41963d0db8e83996c
     internalID: 0
     vertices: []
     indices: 
@@ -388,6 +438,8 @@ TextureImporter:
       julianWALK_0: -8344336891633515172
       julianWALK_1: 7886345554383969055
       julianWALK_10: -4137063043782069414
+      julianWALK_11: -5661378824215792430
+      julianWALK_12: -858319730231513880
       julianWALK_2: 5961212358010630395
       julianWALK_3: -4073302857775289557
       julianWALK_4: 6283527596568367969
