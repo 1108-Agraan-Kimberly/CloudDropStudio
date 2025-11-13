@@ -245,8 +245,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -3.3523974, y: 0}
-  m_Radius: 24.113485
+  m_Offset: {x: 20.632786, y: 0}
+  m_Radius: 40.94521
 --- !u!114 &6101746845696034194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,3 +260,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::enemyFollow
   speed: 5
+  chargeSpeed: 8
+  chargeDuration: 1
+  chargeCooldown: 4
