@@ -14,7 +14,7 @@ public class Movement : MonoBehaviour
   private Rigidbody2D rb;
   private Animator animator;
 
-
+  public Vector2 LastFacingDirection { get; private set; } = Vector2.zero; // Default to zero
   public player_atk playerAtk; 
 
   void Start() 
@@ -33,7 +33,6 @@ public class Movement : MonoBehaviour
         isDashing = false;
       }
     }
-
   }
 
   private void FixedUpdate()
@@ -50,19 +49,22 @@ public class Movement : MonoBehaviour
 
   public void Move(InputAction.CallbackContext context)
   {
-    animator.SetBool("isWalking", true);
+    moveInput = context.ReadValue<Vector2>();
 
-    if(context.canceled)
+    if(moveInput != Vector2.zero)
+    {
+      LastFacingDirection = moveInput.normalized; // Update facing direction only when moving
+      animator.SetBool("isWalking", true);
+    }
+    else
     {
       animator.SetBool("isWalking", false);
-      animator.SetFloat("LastInputX", moveInput.x);
-      animator.SetFloat("LastInputY", moveInput.y);
     }
 
-    moveInput = context.ReadValue<Vector2>();
+    animator.SetFloat("LastInputX", LastFacingDirection.x);
+    animator.SetFloat("LastInputY", LastFacingDirection.y);
     animator.SetFloat("InputX", moveInput.x);
     animator.SetFloat("InputY", moveInput.y);
-
   }
 
   public void Dash(InputAction.CallbackContext context)
@@ -81,7 +83,6 @@ public class Movement : MonoBehaviour
       playerAtk.Attack();
     }
   }
-
 }
 
 

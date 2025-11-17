@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 478209949187199482}
   - component: {fileID: 4280717927528097005}
   - component: {fileID: 6101746845696034194}
+  - component: {fileID: 5924596572086614595}
   m_Layer: 0
   m_Name: C_Enemy
   m_TagString: Untagged
@@ -263,3 +264,25 @@ MonoBehaviour:
   chargeSpeed: 8
   chargeDuration: 1
   chargeCooldown: 4
+--- !u!95 &5924596572086614595
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8333040601428094836}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: db26ab8ca8ea2e64ea9c7e13aea6f08e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

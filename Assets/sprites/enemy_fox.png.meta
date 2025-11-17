@@ -116,8 +116,8 @@ TextureImporter:
         y: 435
         width: 2558
         height: 3412
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.40380502, y: 0.32735416}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -134,12 +134,12 @@ TextureImporter:
       name: enemy_fox_2
       rect:
         serializedVersion: 2
-        x: 3685
-        y: 1459
+        x: 3668
+        y: 1429
         width: 3360
         height: 3412
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.30914727, y: 0.32516885}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

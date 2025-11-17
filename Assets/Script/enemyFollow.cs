@@ -16,16 +16,25 @@ public class EnemyFollow : MonoBehaviour
     private float chargeTimer = 0f;
     private float cooldownTimer = 0f;
 
+    private Animator animator;
+    private enemy_DMG enemyDamageScript;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>(); // Reference the Animator
+        enemyDamageScript = GetComponent<enemy_DMG>(); // Reference the enemy_DMG script
     }
 
     void FixedUpdate()
     {
         if (!isChasing || player == null)
         {
-            rb.linearVelocity = Vector2.zero;
+            rb.velocity = Vector2.zero;
+            animator.SetBool("isIdle", true);
+            animator.SetBool("isMoving", false);
+            animator.SetBool("isCharging", false);
+            animator.SetBool("isAttacking", false);
             return;
         }
 
@@ -33,6 +42,11 @@ public class EnemyFollow : MonoBehaviour
         if (isCharging)
         {
             chargeTimer -= Time.fixedDeltaTime;
+            animator.SetBool("isCharging", true);
+            animator.SetBool("isMoving", false);
+            animator.SetBool("isIdle", false);
+            animator.SetBool("isAttacking", false);
+
             if (chargeTimer <= 0f)
             {
                 isCharging = false;
@@ -54,13 +68,17 @@ public class EnemyFollow : MonoBehaviour
                     chargeTimer = chargeDuration;
                 }
             }
+
+            animator.SetBool("isCharging", false);
+            animator.SetBool("isMoving", true);
+            animator.SetBool("isIdle", false);
+            animator.SetBool("isAttacking", false);
         }
 
         float currentSpeed = isCharging ? chargeSpeed : speed;
         Vector2 direction = (player.position - transform.position).normalized;
-        rb.linearVelocity = direction * currentSpeed;
+        rb.velocity = direction * currentSpeed;
     }
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -68,6 +86,10 @@ public class EnemyFollow : MonoBehaviour
         {
             player = collision.transform;
             isChasing = true;
+            animator.SetBool("isAttacking", true);
+
+            // Call the enemy_DMG script to deal damage
+            enemyDamageScript.OnCollisionEnter2D(new Collision2D());
         }
     }
 
@@ -76,7 +98,11 @@ public class EnemyFollow : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isChasing = false;
-            rb.linearVelocity = Vector2.zero;
+            rb.velocity = Vector2.zero;
+            animator.SetBool("isIdle", true);
+            animator.SetBool("isMoving", false);
+            animator.SetBool("isCharging", false);
+            animator.SetBool("isAttacking", false);
         }
     }
 }
