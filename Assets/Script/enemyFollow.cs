@@ -30,7 +30,7 @@ public class EnemyFollow : MonoBehaviour
     {
         if (!isChasing || player == null)
         {
-            rb.velocity = Vector2.zero;
+            rb.linearVelocity = Vector2.zero;
             animator.SetBool("isIdle", true);
             animator.SetBool("isMoving", false);
             animator.SetBool("isCharging", false);
@@ -77,7 +77,7 @@ public class EnemyFollow : MonoBehaviour
 
         float currentSpeed = isCharging ? chargeSpeed : speed;
         Vector2 direction = (player.position - transform.position).normalized;
-        rb.velocity = direction * currentSpeed;
+        rb.linearVelocity = direction * currentSpeed;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -98,7 +98,7 @@ public class EnemyFollow : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isChasing = false;
-            rb.velocity = Vector2.zero;
+            rb.linearVelocity = Vector2.zero;
             animator.SetBool("isIdle", true);
             animator.SetBool("isMoving", false);
             animator.SetBool("isCharging", false);
