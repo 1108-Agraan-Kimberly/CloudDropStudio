@@ -1,0 +1,333 @@
+fileFormatVersion: 2
+guid: cc7bc031dcd7adb44bcaa41609ccf889
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2626387316282080344
+    second: LandR_ATTACK_0
+  - first:
+      213: -3693460934601374618
+    second: LandR_ATTACK_1
+  - first:
+      213: 2499837996150943940
+    second: LandR_ATTACK_2
+  - first:
+      213: -4351037976591214653
+    second: LandR_ATTACK_3
+  - first:
+      213: -849406340348779484
+    second: LandR_ATTACK_4
+  - first:
+      213: -2015744547957294223
+    second: LandR_ATTACK_5
+  - first:
+      213: 193337410096012956
+    second: LandR_ATTACK_6
+  - first:
+      213: 7832149699112238877
+    second: LandR_ATTACK_7
+  - first:
+      213: 6825347081989935674
+    second: LandR_ATTACK_8
+  - first:
+      213: -8640293618614761901
+    second: LandR_ATTACK_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 220
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LandR_ATTACK_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2993
+        width: 1390
+        height: 1811
+      alignment: 9
+      pivot: {x: 0.49999997, y: 0.04708935}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a34a6aa6a23d8bd0800000000000000
+      internalID: -2626387316282080344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandR_ATTACK_1
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 2794
+        width: 1794
+        height: 1983
+      alignment: 9
+      pivot: {x: 0.5249383, y: 0.067572415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6648d4949d03ebcc0800000000000000
+      internalID: -3693460934601374618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandR_ATTACK_2
+      rect:
+        serializedVersion: 2
+        x: 3317
+        y: 2776
+        width: 1828
+        height: 1900
+      alignment: 9
+      pivot: {x: 0.52855325, y: 0.060455643}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c0f99ca96531b220800000000000000
+      internalID: 2499837996150943940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandR_ATTACK_4
+      rect:
+        serializedVersion: 2
+        x: 5393
+        y: 2735
+        width: 1687
+        height: 1985
+      alignment: 9
+      pivot: {x: 0.5044197, y: 0.07176455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 424eb8d0f6d4634f0800000000000000
+      internalID: -849406340348779484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandR_ATTACK_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 108
+        width: 1709
+        height: 1985
+      alignment: 9
+      pivot: {x: 0.5, y: 0.07176471}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17b33157303a604e0800000000000000
+      internalID: -2015744547957294223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandR_ATTACK_7
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 156
+        width: 1828
+        height: 1900
+      alignment: 9
+      pivot: {x: 0.47960436, y: 0.068304844}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f7443a7a261bc60800000000000000
+      internalID: 7832149699112238877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandR_ATTACK_8
+      rect:
+        serializedVersion: 2
+        x: 3833
+        y: 173
+        width: 1794
+        height: 1985
+      alignment: 9
+      pivot: {x: 0.4625926, y: 0.06800826}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3252c2420188be50800000000000000
+      internalID: 6825347081989935674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LandR_ATTACK_9
+      rect:
+        serializedVersion: 2
+        x: 5689
+        y: 374
+        width: 1391
+        height: 1810
+      alignment: 9
+      pivot: {x: 0.50536054, y: 0.038599998}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 356846b6bb2871880800000000000000
+      internalID: -8640293618614761901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 52ef71d50bd4e094ca7bcb7875d4b550
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LandR_ATTACK_0: -2626387316282080344
+      LandR_ATTACK_1: -3693460934601374618
+      LandR_ATTACK_2: 2499837996150943940
+      LandR_ATTACK_3: -4351037976591214653
+      LandR_ATTACK_4: -849406340348779484
+      LandR_ATTACK_5: -2015744547957294223
+      LandR_ATTACK_6: 193337410096012956
+      LandR_ATTACK_7: 7832149699112238877
+      LandR_ATTACK_8: 6825347081989935674
+      LandR_ATTACK_9: -8640293618614761901
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

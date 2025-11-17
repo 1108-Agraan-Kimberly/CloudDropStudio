@@ -15,7 +15,7 @@ public class Movement : MonoBehaviour
   private Animator animator;
 
 
-  //public player_atk playerAtk; 
+  public player_atk playerAtk; 
 
   void Start() 
   {
@@ -50,22 +50,19 @@ public class Movement : MonoBehaviour
 
   public void Move(InputAction.CallbackContext context)
   {
-    moveInput = context.ReadValue<Vector2>();
+    animator.SetBool("isWalking", true);
 
-    if(context.performed)
+    if(context.canceled)
     {
-      animator.SetBool("isWalking",true);
-    }
-    else if(context.canceled)
-    {
-      animator.SetBool("isWalking",false);
+      animator.SetBool("isWalking", false);
       animator.SetFloat("LastInputX", moveInput.x);
       animator.SetFloat("LastInputY", moveInput.y);
-      moveInput = Vector2.zero;
     }
 
+    moveInput = context.ReadValue<Vector2>();
     animator.SetFloat("InputX", moveInput.x);
     animator.SetFloat("InputY", moveInput.y);
+
   }
 
   public void Dash(InputAction.CallbackContext context)
@@ -74,6 +71,14 @@ public class Movement : MonoBehaviour
     {
       isDashing = true;
       dashTimeRemaining = dashDuration;
+    }
+  }
+
+  public void Attack(InputAction.CallbackContext context)
+  {
+    if(context.performed)
+    {
+      playerAtk.Attack();
     }
   }
 
