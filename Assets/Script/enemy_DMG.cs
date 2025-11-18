@@ -4,10 +4,35 @@ public class enemy_DMG : MonoBehaviour
 {
     public int damage = 1;
     public Animator animator;
-    
-    public void OnCollisionEnter2D(Collision2D collision)
+    public float weaponRange;
+    public LayerMask playerLayer;
+    public float attackCooldown = 1f;
+    private float attackTimer;
+
+    private void Update()
     {
-       collision.gameObject.GetComponent<Health>().healthState(-damage);
+        if(attackTimer > 0)
+        {
+            attackTimer -= Time.deltaTime;
+        }
+    }
+
+    public void DealDamage()
+    {
+        if(attackTimer > 0)
+        {
+            Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, weaponRange, playerLayer);
+            foreach(Collider2D hit in hits)
+            {
+                Health playerHealth = hit.GetComponent<Health>();
+                if(hits.Length > 0)
+                {
+                    hits[0].GetComponent<Health>().healthState(-damage);
+                }
+            }
+            attackTimer = attackCooldown;
+        }
+  
     }
 
         public void FinishAttack()

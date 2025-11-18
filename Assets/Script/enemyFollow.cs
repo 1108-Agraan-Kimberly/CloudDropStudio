@@ -88,8 +88,13 @@ public class EnemyFollow : MonoBehaviour
             isChasing = true;
             animator.SetBool("isAttacking", true);
 
-            // Call the enemy_DMG script to deal damage
-            enemyDamageScript.OnCollisionEnter2D(new Collision2D());
+                    
+            Health playerHealth = collision.GetComponent<Health>();
+            if (playerHealth != null)
+            {
+                enemyDamageScript.DealDamage(playerHealth);
+            }
+
         }
     }
 
