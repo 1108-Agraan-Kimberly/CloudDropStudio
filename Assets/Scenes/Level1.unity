@@ -668,7 +668,7 @@ Transform:
   m_GameObject: {fileID: 508092498}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.30606472, y: -13.27073, z: -15}
+  m_LocalPosition: {x: -0.2696193, y: -13.35028, z: -15}
   m_LocalScale: {x: 0.8125, y: 0.725, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1431,9 +1431,17 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 831263794}
+    - target: {fileID: 1130069370267977288, guid: 3e715441710387d439122ce637dbdde2, type: 3}
+      propertyPath: weaponRange
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1130069370267977288, guid: 3e715441710387d439122ce637dbdde2, type: 3}
+      propertyPath: playerLayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 3357060507747535719, guid: 3e715441710387d439122ce637dbdde2, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3357060507747535719, guid: 3e715441710387d439122ce637dbdde2, type: 3}
       propertyPath: m_Points.Array.size
@@ -2518,6 +2526,14 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1798555451}
+    - target: {fileID: 1130069370267977288, guid: 3e715441710387d439122ce637dbdde2, type: 3}
+      propertyPath: weaponRange
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1130069370267977288, guid: 3e715441710387d439122ce637dbdde2, type: 3}
+      propertyPath: playerLayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 3357060507747535719, guid: 3e715441710387d439122ce637dbdde2, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -4083,6 +4099,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::enemy_DMG
   damage: 2
   animator: {fileID: 0}
+  weaponRange: 0
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  attackCooldown: 1
 --- !u!50 &2122361170
 Rigidbody2D:
   serializedVersion: 5

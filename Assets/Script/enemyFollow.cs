@@ -87,13 +87,7 @@ public class EnemyFollow : MonoBehaviour
             player = collision.transform;
             isChasing = true;
             animator.SetBool("isAttacking", true);
-
-                    
-            Health playerHealth = collision.GetComponent<Health>();
-            if (playerHealth != null)
-            {
-                enemyDamageScript.DealDamage(playerHealth);
-            }
+            enemyDamageScript.DealDamage();
 
         }
     }

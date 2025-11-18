@@ -27,7 +27,7 @@ public class enemy_DMG : MonoBehaviour
                 Health playerHealth = hit.GetComponent<Health>();
                 if(hits.Length > 0)
                 {
-                    hits[0].GetComponent<Health>().healthState(-damage);
+                    playerHealth.healthState(-damage);
                 }
             }
             attackTimer = attackCooldown;
