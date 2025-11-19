@@ -35,6 +35,12 @@ public class EnemyFollow : MonoBehaviour
             animator.SetBool("isMoving", false);
             //animator.SetBool("isCharging", false);
             animator.SetBool("isAttacking", false);
+
+            return;
+        }
+        if(animator.GetBool("isAttacking"))
+        {
+            rb.linearVelocity = Vector2.zero;
             return;
         }
 
@@ -42,11 +48,8 @@ public class EnemyFollow : MonoBehaviour
         if (isCharging)
         {
             chargeTimer -= Time.fixedDeltaTime;
-            //animator.SetBool("isCharging", true);
-            animator.SetBool("isMoving", false);
-            animator.SetBool("isIdle", false);
-            animator.SetBool("isAttacking", false);
 
+            
             if (chargeTimer <= 0f)
             {
                 isCharging = false;
@@ -69,15 +72,20 @@ public class EnemyFollow : MonoBehaviour
                 }
             }
 
-           // animator.SetBool("isCharging", false);
-            animator.SetBool("isMoving", true);
-            animator.SetBool("isIdle", false);
-            animator.SetBool("isAttacking", false);
         }
 
         float currentSpeed = isCharging ? chargeSpeed : speed;
         Vector2 direction = (player.position - transform.position).normalized;
         rb.linearVelocity = direction * currentSpeed;
+
+        animator.SetBool("isIdle", false);
+        animator.SetBool("isMoving", true);
+
+        if(Vector2.Distance(transform.position, player.position) < 1)
+            {
+               animator.SetBool("isAttacking", false);
+               rb.linearVelocity = Vector2.zero;
+            }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -86,9 +94,6 @@ public class EnemyFollow : MonoBehaviour
         {
             player = collision.transform;
             isChasing = true;
-            animator.SetBool("isAttacking", true);
-            enemyDamageScript.DealDamage();
-
         }
     }
 
@@ -98,10 +103,12 @@ public class EnemyFollow : MonoBehaviour
         {
             isChasing = false;
             rb.linearVelocity = Vector2.zero;
-            animator.SetBool("isIdle", true);
-            animator.SetBool("isMoving", false);
-            //animator.SetBool("isCharging", false);
-            animator.SetBool("isAttacking", false);
+            if(animator != null){
+                animator.SetBool("isIdle", true);
+                animator.SetBool("isMoving", false);
+                //animator.SetBool("isCharging", false);
+                // animator.SetBool("isAttacking", false);
+            }
         }
     }
 }

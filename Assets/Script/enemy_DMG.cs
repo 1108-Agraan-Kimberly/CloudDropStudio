@@ -19,7 +19,7 @@ public class enemy_DMG : MonoBehaviour
 
     public void DealDamage()
     {
-        if(attackTimer > 0)
+        if(attackTimer <= 0)
         {
             Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, weaponRange, playerLayer);
             foreach(Collider2D hit in hits)

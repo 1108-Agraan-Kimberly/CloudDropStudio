@@ -1437,11 +1437,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1130069370267977288, guid: 3e715441710387d439122ce637dbdde2, type: 3}
       propertyPath: playerLayer.m_Bits
-      value: 0
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 3357060507747535719, guid: 3e715441710387d439122ce637dbdde2, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3357060507747535719, guid: 3e715441710387d439122ce637dbdde2, type: 3}
       propertyPath: m_Points.Array.size
