@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b2598f54a038b934b9bd943aa91586fb
+guid: 66a0ce3c7d2dbcd4aae04cd7a952f3d1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3988594151019540273
-    second: IMG_0335_0
+      213: 522261638792915594
+    second: Restart Button_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_0335_0
+      name: Restart Button_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1257
-        height: 553
+        x: 551
+        y: 570
+        width: 804
+        height: 138
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fc0974b80caa5a8c0800000000000000
-      internalID: -3988594151019540273
+      spriteID: a8aa01481327f3700800000000000000
+      internalID: 522261638792915594
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      IMG_0335_0: -3988594151019540273
+      Restart Button_0: 522261638792915594
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
