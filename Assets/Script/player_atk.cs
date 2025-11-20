@@ -43,7 +43,11 @@ public class player_atk : MonoBehaviour
             Collider2D[] enemies = Physics2D.OverlapCircleAll(range.position, attackRange, enemyLayer);
             foreach (Collider2D enemy in enemies)
             {
-                enemy.GetComponent<enemy_health>().ChangeHealth(-damage);
+                enemy_health enemyHealth = enemy.GetComponent<enemy_health>();
+                if (enemyHealth != null)
+                {
+                    enemyHealth.ChangeHealth(-damage); // Apply damage to the enemy
+                }
             }
 
             timer = cooldown;
@@ -53,6 +57,16 @@ public class player_atk : MonoBehaviour
     public void FinishAttack()
     {
         animator.SetBool("isAttacking", false);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        // Visualize the attack range in the Scene view
+        if (range != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(range.position, attackRange);
+        }
     }
 }
 

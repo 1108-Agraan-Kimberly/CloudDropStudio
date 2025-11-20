@@ -105,10 +105,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 7080
+        width: 1695
         height: 4920
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -121,11 +121,77 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: LT_asset-min_1
+      rect:
+        serializedVersion: 2
+        x: 5108
+        y: 0
+        width: 1972
+        height: 4905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8202e6f1f7d11944dadbea40a848f707
+      internalID: -365039516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LT_asset-min_2
+      rect:
+        serializedVersion: 2
+        x: 3412
+        y: 3186
+        width: 1618
+        height: 1121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79801938b0305d740a6d0f06648bf251
+      internalID: 382369862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LT_asset-min_3
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 0
+        width: 1895
+        height: 1114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c35eb697e3c754897d3ebbbfc5533a
+      internalID: -1851080069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d739fdef1ec425347822e22cc5cb9903
     internalID: 0
     vertices: []
     indices: 
@@ -136,6 +202,9 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       LT_asset-min_0: -3627321369401091744
+      LT_asset-min_1: -365039516
+      LT_asset-min_2: 382369862
+      LT_asset-min_3: -1851080069
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
