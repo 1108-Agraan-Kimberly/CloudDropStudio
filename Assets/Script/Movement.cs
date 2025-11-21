@@ -22,6 +22,12 @@ public class Movement : MonoBehaviour
   private bool onSlippery = false;                        // Are we standing on slippery floor?
   private Vector2 slipperyVelocity;
 
+  private bool isKnockedBack = false;
+  private Vector2 knockbackVelocity;
+  private float knockbackDurationRemaining;
+
+  [SerializeField] private float knockbackDecay = 0.9f; // How fast knockback slows down
+
     void Start() 
   {
     rb = GetComponent<Rigidbody2D>();
@@ -42,11 +48,22 @@ public class Movement : MonoBehaviour
 
   private void FixedUpdate()
   {
-    if(isDashing)
+    if (isDashing)
     {
       rb.linearVelocity = moveInput.normalized * dashSpeed;
     }
-    if(!onSlippery)
+    else if (isKnockedBack)
+    {
+      rb.linearVelocity = knockbackVelocity;
+      knockbackVelocity *= knockbackDecay; // Gradually reduce knockback force
+
+      knockbackDurationRemaining -= Time.fixedDeltaTime;
+      if (knockbackDurationRemaining <= 0f)
+      {
+        isKnockedBack = false;
+      }
+    }
+    else if (!onSlippery)
     {
       rb.linearVelocity = moveInput.normalized * speed;
     }
@@ -117,6 +134,13 @@ public class Movement : MonoBehaviour
         Debug.Log("Left slippery zone!");
     }
 }
+
+  public void ApplyKnockback(Vector2 force, float duration)
+  {
+    isKnockedBack = true;
+    knockbackVelocity = force;
+    knockbackDurationRemaining = duration;
+  }
 }
 
 
