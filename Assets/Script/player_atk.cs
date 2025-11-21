@@ -11,10 +11,21 @@ public class player_atk : MonoBehaviour
     public LayerMask enemyLayer;
     public int damage = 1;
 
+    public GameObject projectilePrefab; // Reference to the projectile prefab
+    public float projectileSpeed = 10f; // Speed of the projectile
+
     private Movement movementScript;
 
     private void Start()
     {
+        if (projectilePrefab != null)
+        {
+            Debug.Log("Projectile prefab is assigned: " + projectilePrefab.name);
+        }
+        else
+        {
+            Debug.LogError("Projectile prefab is not assigned.");
+        }
         movementScript = GetComponent<Movement>(); // Reference the Movement script
     }
 
@@ -23,6 +34,12 @@ public class player_atk : MonoBehaviour
         if (timer > 0)
         {
             timer -= Time.deltaTime;
+        }
+
+        // Check for right mouse button click to shoot
+        if (Input.GetMouseButtonDown(1))
+        {
+            Shoot();
         }
     }
 
@@ -51,6 +68,31 @@ public class player_atk : MonoBehaviour
             }
 
             timer = cooldown;
+        }
+    }
+
+    public void Shoot()
+    {
+        if (timer <= 0)
+        {
+            // Get the mouse position in world space
+            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            mousePosition.z = 0; // Ensure the z-coordinate is 0
+
+            // Calculate the direction from the player to the mouse position
+            Vector2 shootDirection = (mousePosition - transform.position).normalized;
+
+            // Instantiate the projectile
+            GameObject projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+
+            // Set the projectile's direction and speed
+            Projectile projectileScript = projectile.GetComponent<Projectile>();
+            if (projectileScript != null)
+            {
+                projectileScript.SetDirection(shootDirection, projectileSpeed);
+            }
+
+            timer = cooldown; // Reset the cooldown timer
         }
     }
 
