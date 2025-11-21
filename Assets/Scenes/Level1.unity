@@ -3082,12 +3082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9778709b8f075a54babe627b4372a9d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerUp
-<<<<<<< HEAD
   healAmount: 4
-=======
-  healAmount: 2
-  potionCounter: {fileID: 0}
->>>>>>> 4bff9c4503fe8d7326c5dfd487763f66fa0e9848
 --- !u!58 &728929311
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5297,12 +5292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9778709b8f075a54babe627b4372a9d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerUp
-<<<<<<< HEAD
   healAmount: 4
-=======
-  healAmount: 2
-  potionCounter: {fileID: 594092747}
->>>>>>> 4bff9c4503fe8d7326c5dfd487763f66fa0e9848
 --- !u!58 &1273502930
 CircleCollider2D:
   m_ObjectHideFlags: 0
