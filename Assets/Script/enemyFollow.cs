@@ -1,7 +1,7 @@
 using UnityEngine;
-
 public class EnemyFollow : MonoBehaviour
 {
+
     private Rigidbody2D rb;
     private Transform player;
 
@@ -16,34 +16,25 @@ public class EnemyFollow : MonoBehaviour
     private float chargeTimer = 0f;
     private float cooldownTimer = 0f;
 
-    private Animator animator;
-    private enemy_DMG enemyDamageScript;
-
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>(); // Reference the Animator
-        enemyDamageScript = GetComponent<enemy_DMG>(); // Reference the enemy_DMG script
     }
 
+    // Update is called once per fra
     void FixedUpdate()
     {
         if (!isChasing || player == null)
         {
             rb.linearVelocity = Vector2.zero;
-            animator.SetBool("isIdle", true);
-            animator.SetBool("isWalking", false);
-            animator.SetBool("isAttacking", false);
             return;
         }
 
+        // Handle cooldowns
         if (isCharging)
         {
             chargeTimer -= Time.fixedDeltaTime;
-            animator.SetBool("isWalking", false);
-            animator.SetBool("isIdle", false);
-            animator.SetBool("isAttacking", false);
-
             if (chargeTimer <= 0f)
             {
                 isCharging = false;
@@ -58,16 +49,13 @@ public class EnemyFollow : MonoBehaviour
             }
             else
             {
+                // Randomly decide to charge
                 if (Random.value < 0.01f) // ~1% chance per frame
                 {
                     isCharging = true;
                     chargeTimer = chargeDuration;
                 }
             }
-
-            animator.SetBool("isWalking", true);
-            animator.SetBool("isIdle", false);
-            animator.SetBool("isAttacking", false);
         }
 
         float currentSpeed = isCharging ? chargeSpeed : speed;
@@ -75,29 +63,25 @@ public class EnemyFollow : MonoBehaviour
         rb.linearVelocity = direction * currentSpeed;
     }
 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
+       
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("Player entered range: " + collision.gameObject.name);
+           
             player = collision.transform;
             isChasing = true;
-
-            // Trigger the attack animation and deal damage
-            animator.SetBool("isAttacking", true);
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+       
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("Player exited range: " + collision.gameObject.name);
-            isChasing = false;
+           
             rb.linearVelocity = Vector2.zero;
-            animator.SetBool("isIdle", true);
-            animator.SetBool("isWalking", false);
-            animator.SetBool("isAttacking", false);
         }
     }
 }

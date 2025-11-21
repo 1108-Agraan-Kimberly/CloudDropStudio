@@ -652,7 +652,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   attackRange: 2
-  atkCooldown: 3
+  atkCooldown: 2
 --- !u!114 &36499094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -716,6 +716,96 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 53781150}
   m_CullTransparentMesh: 1
+--- !u!1 &57311177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 57311178}
+  - component: {fileID: 57311179}
+  m_Layer: 10
+  m_Name: icon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &57311178
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57311177}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.5692, y: 3.5692, z: 3.5692}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1581739629}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &57311179
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57311177}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7482667652216324306, guid: b4c594e7713921d4199d2f1d093d04b3, type: 3}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &64496702
 GameObject:
   m_ObjectHideFlags: 0
@@ -1357,7 +1447,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerUp
   healAmount: 4
-  potionCounter: {fileID: 0}
 --- !u!58 &271913895
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1608,7 +1697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5517007716254597380, guid: 71d157b3cfa97724482b14540d704c05, type: 3}
       propertyPath: m_Name
-      value: test_Enemy
+      value: DAD
       objectReference: {fileID: 0}
     - target: {fileID: 6043349502256507781, guid: 71d157b3cfa97724482b14540d704c05, type: 3}
       propertyPath: playerLayer.m_Bits
@@ -1625,31 +1714,26 @@ PrefabInstance:
     - target: {fileID: 6738736890507025642, guid: 71d157b3cfa97724482b14540d704c05, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 7482667652216324306, guid: b4c594e7713921d4199d2f1d093d04b3, type: 3}
-    - target: {fileID: 6738736890507025642, guid: 71d157b3cfa97724482b14540d704c05, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6738736890507025642, guid: 71d157b3cfa97724482b14540d704c05, type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6738736890507025642, guid: 71d157b3cfa97724482b14540d704c05, type: 3}
-      propertyPath: m_Color.r
-      value: 0.91823894
-      objectReference: {fileID: 0}
+      objectReference: {fileID: -7267583954980527357, guid: ddc9ebcaf94c0da4588d7f8c6926541e, type: 3}
     - target: {fileID: 6738736890507025642, guid: 71d157b3cfa97724482b14540d704c05, type: 3}
       propertyPath: m_SortingOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7707828442465979589, guid: 71d157b3cfa97724482b14540d704c05, type: 3}
       propertyPath: attackPoint
       value: 
       objectReference: {fileID: 1157345657}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7707828442465979589, guid: 71d157b3cfa97724482b14540d704c05, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4025951162510453842, guid: 71d157b3cfa97724482b14540d704c05, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 57311178}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5517007716254597380, guid: 71d157b3cfa97724482b14540d704c05, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1581739638}
   m_SourcePrefab: {fileID: 100100000, guid: 71d157b3cfa97724482b14540d704c05, type: 3}
 --- !u!1 &366887047
 GameObject:
@@ -2865,7 +2949,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &551412165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3000,7 +3084,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &594092746
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3033,6 +3117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PotionCounter
   counterText: {fileID: 551412165}
+  potionsConsumed: 0
 --- !u!1 &637539553
 GameObject:
   m_ObjectHideFlags: 0
@@ -3612,7 +3697,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerUp
   healAmount: 4
-  potionCounter: {fileID: 0}
 --- !u!58 &728929311
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5543,6 +5627,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1149698093 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5517007716254597380, guid: 71d157b3cfa97724482b14540d704c05, type: 3}
+  m_PrefabInstance: {fileID: 326038963}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1157345657 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5559195430746243990, guid: 71d157b3cfa97724482b14540d704c05, type: 3}
@@ -6212,7 +6301,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PowerUp
   healAmount: 4
-  potionCounter: {fileID: 0}
 --- !u!58 &1273502930
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6685,6 +6773,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7048903849178560877, guid: cfe7e9c90a65d564c94cc8484b9d06a8, type: 3}
   m_PrefabInstance: {fileID: 515358129}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1581739629 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4025951162510453842, guid: 71d157b3cfa97724482b14540d704c05, type: 3}
+  m_PrefabInstance: {fileID: 326038963}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1581739638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149698093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a43a9e4c371c5d44b9ab8c094016ede, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyFollow
+  speed: 5
+  chargeSpeed: 10
+  chargeDuration: 2
+  chargeCooldown: 1
 --- !u!1 &1590072175
 GameObject:
   m_ObjectHideFlags: 0
@@ -9193,6 +9302,10 @@ PrefabInstance:
     - target: {fileID: 1191205915537976178, guid: ca445e22c22b2b14889d4d906275587a, type: 3}
       propertyPath: currentHealth
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1524254407619926737, guid: ca445e22c22b2b14889d4d906275587a, type: 3}
+      propertyPath: cooldown
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1524254407619926737, guid: ca445e22c22b2b14889d4d906275587a, type: 3}
       propertyPath: attackRange
