@@ -28,16 +28,16 @@ public class map_transition : MonoBehaviour
         switch (direction)
         {
             case Direction.Up:
-                newPosition.y += 40f;
+                newPosition.y += 30f;
                 break;
             case Direction.Down:
-                newPosition.y -= 40f;
+                newPosition.y -= 30f;
                 break;
             case Direction.Left:
-                newPosition.x -= 50f;
+                newPosition.x -= 40f;
                 break;
             case Direction.Right:
-                newPosition.x += 50f;
+                newPosition.x += 40f;
                 break;
         }
         player.transform.position = newPosition;

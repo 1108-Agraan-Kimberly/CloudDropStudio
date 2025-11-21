@@ -32,7 +32,7 @@ public class EnemyFollow : MonoBehaviour
         {
             rb.linearVelocity = Vector2.zero;
             animator.SetBool("isIdle", true);
-            animator.SetBool("isMoving", false);
+            animator.SetBool("isWalking", false);
             animator.SetBool("isAttacking", false);
             return;
         }
@@ -40,7 +40,7 @@ public class EnemyFollow : MonoBehaviour
         if (isCharging)
         {
             chargeTimer -= Time.fixedDeltaTime;
-            animator.SetBool("isMoving", false);
+            animator.SetBool("isWalking", false);
             animator.SetBool("isIdle", false);
             animator.SetBool("isAttacking", false);
 
@@ -65,7 +65,7 @@ public class EnemyFollow : MonoBehaviour
                 }
             }
 
-            animator.SetBool("isMoving", true);
+            animator.SetBool("isWalking", true);
             animator.SetBool("isIdle", false);
             animator.SetBool("isAttacking", false);
         }
@@ -96,7 +96,7 @@ public class EnemyFollow : MonoBehaviour
             isChasing = false;
             rb.linearVelocity = Vector2.zero;
             animator.SetBool("isIdle", true);
-            animator.SetBool("isMoving", false);
+            animator.SetBool("isWalking", false);
             animator.SetBool("isAttacking", false);
         }
     }
