@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 6738736890507025642}
   - component: {fileID: 7257964125733037413}
   - component: {fileID: 97086940942247419}
-  - component: {fileID: 8877283071830519459}
   m_Layer: 0
   m_Name: test_Enemy
   m_TagString: Untagged
@@ -157,17 +156,3 @@ CapsuleCollider2D:
   m_Offset: {x: -0.024359703, y: 6.382154}
   m_Size: {x: 10.097591, y: 13.764308}
   m_Direction: 0
---- !u!114 &8877283071830519459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5517007716254597380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a58f50a5b332dc4286fe0a79b55ddb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::enemy_health
-  currentHealth: 0
-  maxHealth: 0
