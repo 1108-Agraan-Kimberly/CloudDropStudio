@@ -79,6 +79,7 @@ public class EnemyFollow : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            Debug.Log("Player entered range: " + collision.gameObject.name);
             player = collision.transform;
             isChasing = true;
 
@@ -91,6 +92,7 @@ public class EnemyFollow : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            Debug.Log("Player exited range: " + collision.gameObject.name);
             isChasing = false;
             rb.linearVelocity = Vector2.zero;
             animator.SetBool("isIdle", true);
