@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PowerUp
   - Slippery
+  - Wall
   layers:
   - Default
   - TransparentFX
