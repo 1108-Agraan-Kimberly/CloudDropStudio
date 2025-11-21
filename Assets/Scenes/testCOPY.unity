@@ -743,6 +743,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: test_Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5559195430746243990, guid: 71d157b3cfa97724482b14540d704c05, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5559195430746243990, guid: 71d157b3cfa97724482b14540d704c05, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043349502256507781, guid: 71d157b3cfa97724482b14540d704c05, type: 3}
+      propertyPath: playerLayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 6738736890507025642, guid: 71d157b3cfa97724482b14540d704c05, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -759,6 +771,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2017906210}
+    - target: {fileID: 7707828442465979589, guid: 71d157b3cfa97724482b14540d704c05, type: 3}
+      propertyPath: attackPoint
+      value: 
+      objectReference: {fileID: 865336224}
+    - target: {fileID: 7707828442465979589, guid: 71d157b3cfa97724482b14540d704c05, type: 3}
+      propertyPath: attackRange
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2635,6 +2655,11 @@ PolygonCollider2D:
       - {x: 7.4910893, y: -3.729128}
       - {x: 7.737008, y: -1.3777401}
   m_UseDelaunayMesh: 0
+--- !u!4 &865336224 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5559195430746243990, guid: 71d157b3cfa97724482b14540d704c05, type: 3}
+  m_PrefabInstance: {fileID: 329113591}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &883989714
 GameObject:
   m_ObjectHideFlags: 0
