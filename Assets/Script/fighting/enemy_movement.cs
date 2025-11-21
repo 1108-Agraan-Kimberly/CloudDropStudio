@@ -7,7 +7,7 @@ public class enemy_movement : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<RigidBody2d>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
