@@ -1486,6 +1486,7 @@ GameObject:
   - component: {fileID: 1581239897}
   - component: {fileID: 1581239896}
   - component: {fileID: 1581239899}
+  - component: {fileID: 1581239900}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -1509,7 +1510,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -970, y: -538}
+  m_AnchoredPosition: {x: -966.8, y: -436.7}
   m_SizeDelta: {x: 35.9426, y: 56.7699}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!135 &1581239896
@@ -1531,8 +1532,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 29.108253
+  m_Center: {x: 0, y: 0.8489914, z: 0}
 --- !u!114 &1581239897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1593,11 +1594,24 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1581239900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581239894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9100b666f05ce1f41a9168c68c964e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PowerUpCollector
+  powerUpEffect: {fileID: 0}
 --- !u!1 &1850420933
 GameObject:
   m_ObjectHideFlags: 0
