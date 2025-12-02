@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement; 
 using Unity.Cinemachine;
 
-public class restart_exit : MonoBehaviour
+public class transitiontoTWO : MonoBehaviour
 {
     [SerializeField] PolygonCollider2D mapBoundary;
     CinemachineConfiner2D confiner;
@@ -25,13 +25,12 @@ public class restart_exit : MonoBehaviour
         {
             confiner.BoundingShape2D = mapBoundary;
             ResetPlayerPosition(collision.gameObject);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadSceneAsync(2);
         }
     }
 
     private void ResetPlayerPosition(GameObject player)
     {
         player.transform.position = playerStartPos;
-        //player.GetComponent<Health>().ResetHealth();
     }
 }
