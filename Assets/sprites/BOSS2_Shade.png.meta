@@ -1,0 +1,457 @@
+fileFormatVersion: 2
+guid: f9827b1f8d144974d92d817742f35221
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9173504708361950710
+    second: BOSS2_Shade_0
+  - first:
+      213: 4786895748395410109
+    second: BOSS2_Shade_1
+  - first:
+      213: 2056690563760267244
+    second: BOSS2_Shade_2
+  - first:
+      213: 930162933575991210
+    second: BOSS2_Shade_3
+  - first:
+      213: 4109394732802538631
+    second: BOSS2_Shade_4
+  - first:
+      213: 6132706615425614064
+    second: BOSS2_Shade_5
+  - first:
+      213: 7230558418271632240
+    second: BOSS2_Shade_6
+  - first:
+      213: -6670127303032802589
+    second: BOSS2_Shade_7
+  - first:
+      213: 3760263115034159386
+    second: BOSS2_Shade_8
+  - first:
+      213: 4893952659373248085
+    second: BOSS2_Shade_9
+  - first:
+      213: -4178148765226342239
+    second: BOSS2_Shade_10
+  - first:
+      213: -6099513955591410622
+    second: BOSS2_Shade_11
+  - first:
+      213: 6461825756711365349
+    second: BOSS2_Shade_12
+  - first:
+      213: -6294915517355346074
+    second: BOSS2_Shade_13
+  - first:
+      213: 3911790813654584098
+    second: BOSS2_Shade_14
+  - first:
+      213: 668206881296237179
+    second: BOSS2_Shade_15
+  - first:
+      213: 8319644566595501055
+    second: BOSS2_Shade_16
+  - first:
+      213: -441002872037335935
+    second: BOSS2_Shade_17
+  - first:
+      213: -6999145904260424442
+    second: BOSS2_Shade_18
+  - first:
+      213: 8121403053144665743
+    second: BOSS2_Shade_19
+  - first:
+      213: 397651925356539950
+    second: BOSS2_Shade_20
+  - first:
+      213: -3323649306987684958
+    second: BOSS2_Shade_21
+  - first:
+      213: 4535402328194044513
+    second: BOSS2_Shade_22
+  - first:
+      213: 2013797854305096209
+    second: BOSS2_Shade_23
+  - first:
+      213: -7910769847840126056
+    second: BOSS2_Shade_24
+  - first:
+      213: -1350862966323469841
+    second: BOSS2_Shade_25
+  - first:
+      213: 8500539974746001511
+    second: BOSS2_Shade_26
+  - first:
+      213: 5243339624098036168
+    second: BOSS2_Shade_27
+  - first:
+      213: 4159981804040373323
+    second: BOSS2_Shade_28
+  - first:
+      213: 9172298366537409917
+    second: BOSS2_Shade_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BOSS2_Shade_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 3055
+        width: 1082
+        height: 1749
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a66b0321a21b080800000000000000
+      internalID: -9173504708361950710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS2_Shade_1
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 3020
+        width: 970
+        height: 1832
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db2afe332587e6240800000000000000
+      internalID: 4786895748395410109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS2_Shade_2
+      rect:
+        serializedVersion: 2
+        x: 2361
+        y: 3052
+        width: 970
+        height: 1752
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cef14d1cb25da8c10800000000000000
+      internalID: 2056690563760267244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS2_Shade_3
+      rect:
+        serializedVersion: 2
+        x: 3778
+        y: 15
+        width: 1555
+        height: 2458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaf3807824a98ec00800000000000000
+      internalID: 930162933575991210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS2_Shade_4
+      rect:
+        serializedVersion: 2
+        x: 5371
+        y: 29
+        width: 1659
+        height: 2468
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c7e8aacb0870930800000000000000
+      internalID: 4109394732802538631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS2_Shade_9
+      rect:
+        serializedVersion: 2
+        x: 5247
+        y: 3984
+        width: 924
+        height: 750
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55e4581b300dae340800000000000000
+      internalID: 4893952659373248085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS2_Shade_11
+      rect:
+        serializedVersion: 2
+        x: 5262
+        y: 3188
+        width: 886
+        height: 690
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24caf6ebf5c2a5ba0800000000000000
+      internalID: -6099513955591410622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS2_Shade_14
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1197
+        width: 1082
+        height: 1749
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22b848bf409794630800000000000000
+      internalID: 3911790813654584098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS2_Shade_15
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 1225
+        width: 970
+        height: 1752
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7242244e92f54900800000000000000
+      internalID: 668206881296237179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOSS2_Shade_16
+      rect:
+        serializedVersion: 2
+        x: 2241
+        y: 1225
+        width: 970
+        height: 1752
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffbfe6967a0557370800000000000000
+      internalID: 8319644566595501055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f4f7712d77d34e349b1bfc510e7e91d2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BOSS2_Shade_0: -9173504708361950710
+      BOSS2_Shade_1: 4786895748395410109
+      BOSS2_Shade_10: -4178148765226342239
+      BOSS2_Shade_11: -6099513955591410622
+      BOSS2_Shade_12: 6461825756711365349
+      BOSS2_Shade_13: -6294915517355346074
+      BOSS2_Shade_14: 3911790813654584098
+      BOSS2_Shade_15: 668206881296237179
+      BOSS2_Shade_16: 8319644566595501055
+      BOSS2_Shade_17: -441002872037335935
+      BOSS2_Shade_18: -6999145904260424442
+      BOSS2_Shade_19: 8121403053144665743
+      BOSS2_Shade_2: 2056690563760267244
+      BOSS2_Shade_20: 397651925356539950
+      BOSS2_Shade_21: -3323649306987684958
+      BOSS2_Shade_22: 4535402328194044513
+      BOSS2_Shade_23: 2013797854305096209
+      BOSS2_Shade_24: -7910769847840126056
+      BOSS2_Shade_25: -1350862966323469841
+      BOSS2_Shade_26: 8500539974746001511
+      BOSS2_Shade_27: 5243339624098036168
+      BOSS2_Shade_28: 4159981804040373323
+      BOSS2_Shade_29: 9172298366537409917
+      BOSS2_Shade_3: 930162933575991210
+      BOSS2_Shade_4: 4109394732802538631
+      BOSS2_Shade_5: 6132706615425614064
+      BOSS2_Shade_6: 7230558418271632240
+      BOSS2_Shade_7: -6670127303032802589
+      BOSS2_Shade_8: 3760263115034159386
+      BOSS2_Shade_9: 4893952659373248085
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -340,6 +340,22 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 2.3374445
       objectReference: {fileID: 0}
+    - target: {fileID: 6362937139845442451, guid: 3e715441710387d439122ce637dbdde2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.83980113
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362937139845442451, guid: 3e715441710387d439122ce637dbdde2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8399438
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362937139845442451, guid: 3e715441710387d439122ce637dbdde2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362937139845442451, guid: 3e715441710387d439122ce637dbdde2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.48
+      objectReference: {fileID: 0}
     - target: {fileID: 8333040601428094836, guid: 3e715441710387d439122ce637dbdde2, type: 3}
       propertyPath: m_Name
       value: C_Enemy (2) Variant
