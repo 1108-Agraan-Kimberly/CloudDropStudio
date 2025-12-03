@@ -4,7 +4,7 @@ using Unity.Cinemachine;
 
 public class transitiontoTWO : MonoBehaviour
 {
-    [SerializeField] PolygonCollider2D mapBoundary;
+ 
     CinemachineConfiner2D confiner;
     
     private Vector3 playerStartPos;
@@ -23,7 +23,7 @@ public class transitiontoTWO : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            confiner.BoundingShape2D = mapBoundary;
+       
             ResetPlayerPosition(collision.gameObject);
             SceneManager.LoadSceneAsync(2);
         }

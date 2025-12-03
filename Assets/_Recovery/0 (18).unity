@@ -1118,11 +1118,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1191503157823926882, guid: ab98871b5d6cc7943b86cacf76a96a3c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 70.6
+      value: 87.2
       objectReference: {fileID: 0}
     - target: {fileID: 1191503157823926882, guid: ab98871b5d6cc7943b86cacf76a96a3c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -170.3
+      value: -158.7
       objectReference: {fileID: 0}
     - target: {fileID: 1191503157823926882, guid: ab98871b5d6cc7943b86cacf76a96a3c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1159,18 +1159,6 @@ PrefabInstance:
     - target: {fileID: 2416609993785056848, guid: ab98871b5d6cc7943b86cacf76a96a3c, type: 3}
       propertyPath: m_Name
       value: spellbook
-      objectReference: {fileID: 0}
-    - target: {fileID: 7468597668615954559, guid: ab98871b5d6cc7943b86cacf76a96a3c, type: 3}
-      propertyPath: m_Mass
-      value: 0.0001
-      objectReference: {fileID: 0}
-    - target: {fileID: 7468597668615954559, guid: ab98871b5d6cc7943b86cacf76a96a3c, type: 3}
-      propertyPath: m_Constraints
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7468597668615954559, guid: ab98871b5d6cc7943b86cacf76a96a3c, type: 3}
-      propertyPath: m_GravityScale
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6952,7 +6940,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -4
+  m_SortingOrder: -1
   m_Sprite: {fileID: -2591447644168548488, guid: 1bc8746c3b483bf438837f9ccaf8d2a1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
