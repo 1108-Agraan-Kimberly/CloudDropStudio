@@ -248,6 +248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::enemy_health
   currentHealth: 5
   maxHealth: 5
+  potion: {fileID: 5144280032783984577, guid: d38a234d928c4d54bba693c49adf2900, type: 3}
 --- !u!58 &4280717927528097005
 CircleCollider2D:
   m_ObjectHideFlags: 0

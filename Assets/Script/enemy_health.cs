@@ -4,6 +4,7 @@ public class enemy_health : MonoBehaviour
 {
     public int currentHealth;
     public int maxHealth;
+    public GameObject potion;
 
     private SpriteRenderer sr;
     private void Start()
@@ -27,6 +28,7 @@ public class enemy_health : MonoBehaviour
         else if (currentHealth <= 0)
         {
             Destroy(gameObject);
+            Instantiate(potion, transform.position, Quaternion.identity);
         }
     }
     private System.Collections.IEnumerator Red()
