@@ -8,6 +8,7 @@ TagManager:
   - Slippery
   - Wall
   - bullet
+  - Enemy
   layers:
   - Default
   - TransparentFX
