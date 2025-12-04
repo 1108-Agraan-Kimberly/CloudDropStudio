@@ -36,7 +36,6 @@ public class enemy_movement : MonoBehaviour
        
         if(enemyState == EnemyState.Walking)
         {
-
             Chase();
         }
         else if(enemyState == EnemyState.Attacking)
