@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 3637801979282984701}
   - component: {fileID: 4684913974326745796}
   - component: {fileID: 8449147746659473749}
-  - component: {fileID: 8254138275861494165}
+  - component: {fileID: 5030345185913203306}
   m_Layer: 7
   m_Name: boss_Wolfie
   m_TagString: Untagged
@@ -190,8 +190,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.4335518, y: 1.4407911}
-  m_Radius: 10.459928
+  m_Offset: {x: 0.4335518, y: 0.66877747}
+  m_Radius: 10.810307
 --- !u!70 &916938239280555964
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -226,8 +226,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0015573502, y: 4.731077}
-  m_Size: {x: 4.647271, y: 11.268238}
+  m_Offset: {x: 0.29668474, y: 5.7699137}
+  m_Size: {x: 4.0570164, y: 11.7708645}
   m_Direction: 0
 --- !u!114 &3637801979282984701
 MonoBehaviour:
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::enemy_health
   currentHealth: 10
   maxHealth: 10
-  potion: {fileID: 0}
+  potion: {fileID: 5144280032783984577, guid: d38a234d928c4d54bba693c49adf2900, type: 3}
 --- !u!95 &4684913974326745796
 Animator:
   serializedVersion: 7
@@ -284,7 +284,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
---- !u!114 &8254138275861494165
+--- !u!114 &5030345185913203306
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -293,10 +293,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4888901047905989018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 176e956304b811643a489f247961d8c5, type: 3}
+  m_Script: {fileID: 11500000, guid: 14ae863dfb7f65147aee303de3e7792e, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
-  waypointsParent: {fileID: 0}
-  movespeed: 4
-  waitTime: 2
-  loopWaypoints: 1
+  m_EditorClassIdentifier: Assembly-CSharp::enemy_movement
+  speed: 5
+  detectRange: 4
+  attackPoint: {fileID: 2779184092763642416}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  attackRange: 2
+  atkCooldown: 2

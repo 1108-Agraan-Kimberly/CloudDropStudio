@@ -1430,9 +1430,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2092579575}
     m_Modifications:
+    - target: {fileID: 916938239280555964, guid: a478f431b00fb8b42831ace276bd36d7, type: 3}
+      propertyPath: m_Size.y
+      value: 10.854268
+      objectReference: {fileID: 0}
+    - target: {fileID: 916938239280555964, guid: a478f431b00fb8b42831ace276bd36d7, type: 3}
+      propertyPath: m_Offset.y
+      value: 4.99917
+      objectReference: {fileID: 0}
+    - target: {fileID: 3637801979282984701, guid: a478f431b00fb8b42831ace276bd36d7, type: 3}
+      propertyPath: potion
+      value: 
+      objectReference: {fileID: 5144280032783984577, guid: d38a234d928c4d54bba693c49adf2900, type: 3}
     - target: {fileID: 4888901047905989018, guid: a478f431b00fb8b42831ace276bd36d7, type: 3}
       propertyPath: m_Name
       value: boss_Wolfie
+      objectReference: {fileID: 0}
+    - target: {fileID: 5030345185913203306, guid: a478f431b00fb8b42831ace276bd36d7, type: 3}
+      propertyPath: detectRange
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6686974095267014957, guid: a478f431b00fb8b42831ace276bd36d7, type: 3}
+      propertyPath: m_Radius
+      value: 10.812552
+      objectReference: {fileID: 0}
+    - target: {fileID: 6686974095267014957, guid: a478f431b00fb8b42831ace276bd36d7, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.49785137
       objectReference: {fileID: 0}
     - target: {fileID: 6958648515513916587, guid: a478f431b00fb8b42831ace276bd36d7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1474,10 +1498,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8254138275861494165, guid: a478f431b00fb8b42831ace276bd36d7, type: 3}
-      propertyPath: waypointsParent
-      value: 
-      objectReference: {fileID: 2040842850}
+    - target: {fileID: 8449147746659473749, guid: a478f431b00fb8b42831ace276bd36d7, type: 3}
+      propertyPath: damage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
