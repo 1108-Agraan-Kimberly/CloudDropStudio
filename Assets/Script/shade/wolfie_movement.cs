@@ -7,57 +7,60 @@ public class wolfie_movement : MonoBehaviour
     public float movespeed = 2f;
     public float waitTime = 2f;
     public bool loopWaypoints = true;
+    public float arrivalThreshold = 0.05f;
+    public bool debugLogs = false;
 
-    private Transform[] waypoints;
-    private int currentPoint;
+    private Vector2[] waypointPositions;
+    private int currentPoint = 0;
     private bool isWaiting;
-
-    private Rigidbody2D rb;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-
-        waypoints = new Transform[waypointsParent.childCount];
-        for (int i = 0; i < waypoints.Length; i++)
+        if (waypointsParent == null || waypointsParent.childCount == 0)
         {
-            waypoints[i] = waypointsParent.GetChild(i);
+            Debug.LogError("wolfie_movement needs a waypointsParent with at least one child.");
+            enabled = false;
+            return;
         }
+
+        int count = waypointsParent.childCount;
+        waypointPositions = new Vector2[count];
+        for (int i = 0; i < count; i++)
+            waypointPositions[i] = waypointsParent.GetChild(i).position;
+
+        currentPoint = 0;
     }
 
-    void FixedUpdate()
+    void Update()
     {
+        if (isWaiting) return;
         MoveToPoint();
     }
 
     void MoveToPoint()
     {
-        if (isWaiting)
-        {
-            rb.linearVelocity = Vector2.zero;
-            return;
-        }
+        Vector2 currentPos = transform.position;
+        Vector2 targetPos = waypointPositions[currentPoint];
 
-        Transform target = waypoints[currentPoint];
-        Vector2 direction = ((Vector2)target.position - rb.position).normalized;
+        transform.position = Vector2.MoveTowards(currentPos, targetPos, movespeed * Time.deltaTime);
 
-        rb.linearVelocity = direction * movespeed;
-
-        if (Vector2.Distance(rb.position, target.position) < 0.1f)
+        if (Vector2.Distance(currentPos, targetPos) <= arrivalThreshold)
         {
             StartCoroutine(WaitAtPoint());
         }
+
+        if (debugLogs)
+            Debug.Log($"[wolfie_movement] moving to {targetPos} from {currentPos}");
     }
 
     IEnumerator WaitAtPoint()
     {
         isWaiting = true;
-        rb.linearVelocity = Vector2.zero;
         yield return new WaitForSeconds(waitTime);
 
-        currentPoint = loopWaypoints ?
-            (currentPoint + 1) % waypoints.Length :
-            Mathf.Min(currentPoint + 1, waypoints.Length - 1);
+        currentPoint = loopWaypoints
+            ? (currentPoint + 1) % waypointPositions.Length
+            : Mathf.Min(currentPoint + 1, waypointPositions.Length - 1);
 
         isWaiting = false;
     }
