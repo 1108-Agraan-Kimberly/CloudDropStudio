@@ -70,6 +70,10 @@ public class player_atk : MonoBehaviour
             {
                 if (enemy == null) continue;
 
+                // Ignore the player's own collider(s)
+                if (enemy.gameObject == gameObject) continue;
+                if (enemy.CompareTag("Player")) continue;
+
                 // Prefer enemy_health component (on collider, parent, or children)
                 enemy_health enemyHealth = enemy.GetComponent<enemy_health>();
                 if (enemyHealth == null) enemyHealth = enemy.GetComponentInParent<enemy_health>();
