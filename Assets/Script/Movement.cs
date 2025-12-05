@@ -6,27 +6,30 @@ public class Movement : MonoBehaviour
   [SerializeField] private float speed = 5f;
   [SerializeField] private float dashSpeed = 15f;
   [SerializeField] private float dashDuration = 0.5f;
+  [SerializeField] private float slowMultiplier = 0.5f; // Movement slowed by 50%
+  private bool onSlowZone = false;
 
-  private float dashTimeRemaining;
+
+    private float dashTimeRemaining;
   private bool isDashing;
 
   private Vector2 moveInput;
   private Rigidbody2D rb;
   private Animator animator;
 
-  public Vector2 LastFacingDirection { get; private set; } = Vector2.zero; // Default to zero
+  public Vector2 LastFacingDirection { get; private set; } = Vector2.zero; 
   public player_atk playerAtk;
 
-  [SerializeField] private float slipperyControl = 0.3f;  // How much control you have on ice
-  [SerializeField] private float slipperyDecay = 0.9f;     // How fast sliding slows down
-  private bool onSlippery = false;                        // Are we standing on slippery floor?
+  [SerializeField] private float slipperyControl = 0.3f;  
+  [SerializeField] private float slipperyDecay = 0.9f;     
+  private bool onSlippery = false;                        
   private Vector2 slipperyVelocity;
 
   private bool isKnockedBack = false;
   private Vector2 knockbackVelocity;
   private float knockbackDurationRemaining;
 
-  [SerializeField] private float knockbackDecay = 0.9f; // How fast knockback slows down
+  [SerializeField] private float knockbackDecay = 0.9f; 
 
     void Start() 
   {
@@ -63,12 +66,22 @@ public class Movement : MonoBehaviour
         isKnockedBack = false;
       }
     }
-    else if (!onSlippery)
-    {
-      rb.linearVelocity = moveInput.normalized * speed;
-    }
-    else
-    {
+      //else if (!onSlippery)
+        //{
+        //  rb.linearVelocity = moveInput.normalized * speed;
+        //}
+        else if (!onSlippery)
+        {
+            float currentSpeed = speed;
+
+            if (onSlowZone)
+                currentSpeed *= slowMultiplier;
+
+            rb.linearVelocity = moveInput.normalized * currentSpeed;
+        }
+
+        else
+        {
         slipperyVelocity = rb.linearVelocity;
 
             // Apply input with reduced control
@@ -117,25 +130,61 @@ public class Movement : MonoBehaviour
       playerAtk.Attack();
     }
   }
-  private void OnTriggerEnter2D(Collider2D collision)
-  {
+    //  private void OnTriggerEnter2D(Collider2D collision)
+    //  {
+    //        if (collision.CompareTag("Slippery"))
+    //        {
+    //            onSlippery = true;
+    //            Debug.Log("Entered slippery zone!");
+    //        }
+    //        if (collision.CompareTag("SlowZone"))
+    //        {
+    //            onSlowZone = true;
+    //            Debug.Log("Entered slow zone!");
+    //        }
+    //    }
+
+    //  private void OnTriggerExit2D(Collider2D collision)
+    //  {
+    //    if (collision.CompareTag("Slippery"))
+    //    { 
+    //        onSlippery = false;
+    //        Debug.Log("Left slippery zone!");
+    //    }
+
+    //}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
         if (collision.CompareTag("Slippery"))
         {
             onSlippery = true;
             Debug.Log("Entered slippery zone!");
         }
-   }
 
-  private void OnTriggerExit2D(Collider2D collision)
-  {
-    if (collision.CompareTag("Slippery"))
-    { 
-        onSlippery = false;
-        Debug.Log("Left slippery zone!");
+        if (collision.CompareTag("Slow"))
+        {
+            onSlowZone = true;
+            Debug.Log("Entered slow zone!");
+        }
     }
-}
 
-  public void ApplyKnockback(Vector2 force, float duration)
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Slippery"))
+        {
+            onSlippery = false;
+            Debug.Log("Left slippery zone!");
+        }
+
+        if (collision.CompareTag("Slow"))
+        {
+            onSlowZone = false;
+            Debug.Log("Left slow zone!");
+        }
+    }
+
+
+    public void ApplyKnockback(Vector2 force, float duration)
   {
     isKnockedBack = true;
     knockbackVelocity = force;

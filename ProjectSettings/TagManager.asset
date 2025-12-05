@@ -9,6 +9,7 @@ TagManager:
   - Wall
   - bullet
   - Enemy
+  - Slow
   layers:
   - Default
   - TransparentFX
