@@ -17,7 +17,7 @@ public class Movement : MonoBehaviour
   private Rigidbody2D rb;
   private Animator animator;
 
-  public Vector2 LastFacingDirection { get; private set; } = Vector2.zero; 
+  public Vector2 LastFacingDirection { get; private set; } = Vector2.right; 
   public player_atk playerAtk;
 
   [SerializeField] private float slipperyControl = 0.3f;  

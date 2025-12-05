@@ -57,30 +57,53 @@ public class player_atk : MonoBehaviour
                 range.localPosition = attackDirection * attackRange;
             }
 
-            // Detect enemies in the attack range
+            // Detect enemies in the attack range using layer mask
             Collider2D[] enemies = Physics2D.OverlapCircleAll(range.position, attackRange, enemyLayer);
+
+            // Fallback: if no results from layer mask, check all colliders and filter by enemy components/tags
+            if (enemies == null || enemies.Length == 0)
+            {
+                enemies = Physics2D.OverlapCircleAll(range.position, attackRange);
+            }
+
             foreach (Collider2D enemy in enemies)
             {
+                if (enemy == null) continue;
+
+                // Prefer enemy_health component (on collider, parent, or children)
                 enemy_health enemyHealth = enemy.GetComponent<enemy_health>();
+                if (enemyHealth == null) enemyHealth = enemy.GetComponentInParent<enemy_health>();
+                if (enemyHealth == null) enemyHealth = enemy.GetComponentInChildren<enemy_health>();
+
                 if (enemyHealth != null)
                 {
                     enemyHealth.ChangeHealth(-damage); // Apply damage to the enemy
+                    continue;
+                }
+
+                // Also support enemies that use a different health script (robust fallback)
+                Health generic = enemy.GetComponent<Health>();
+                if (generic == null) generic = enemy.GetComponentInParent<Health>();
+                if (generic == null) generic = enemy.GetComponentInChildren<Health>();
+                if (generic != null)
+                {
+                    generic.healthState(-damage);
+                    continue;
+                }
+
+                // Last resort: if collider is tagged as Enemy, try to damage a known component on the same GameObject
+                if (enemy.CompareTag("Enemy"))
+                {
+                    // try enemy_health again on the root
+                    GameObject go = enemy.gameObject;
+                    enemyHealth = go.GetComponent<enemy_health>();
+                    if (enemyHealth == null) enemyHealth = go.GetComponentInChildren<enemy_health>();
+                    if (enemyHealth != null)
+                    {
+                        enemyHealth.ChangeHealth(-damage);
+                    }
                 }
             }
-
-           //if(spellbook.collected == true)
-           // {
-           //     Collider2D[] bookcases = Physics2D.OverlapCircleAll(range.position, attackRange, Hazard);
-           //     foreach (Collider2D bookcase in bookcases)
-           //     {
-           //         enemy_health enemyHealth = bookcase.GetComponent<enemy_health>();
-           //         if (enemyHealth != null)
-           //         {
-           //             enemyHealth.ChangeHealth(-damage); // Apply damage to the enemy
-           //         }
-           //     } 
-           // }
-            
 
             timer = cooldown;
         }
