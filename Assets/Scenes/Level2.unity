@@ -4977,11 +4977,6 @@ Transform:
   - {fileID: 1561691826}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1161235125 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 593758120754947739, guid: 73866ffdf4e2c034eb4f5540c39548f1, type: 3}
-  m_PrefabInstance: {fileID: 8649895347425597081}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1180029310
 GameObject:
   m_ObjectHideFlags: 0
@@ -8639,11 +8634,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 72454232588920260, guid: c2b62a9d27c2efb46b22d17227ff3c68, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.52843
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 72454232588920260, guid: c2b62a9d27c2efb46b22d17227ff3c68, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.9155
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 72454232588920260, guid: c2b62a9d27c2efb46b22d17227ff3c68, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8688,69 +8683,12 @@ PrefabInstance:
     - target: {fileID: 7018575951344005156, guid: c2b62a9d27c2efb46b22d17227ff3c68, type: 3}
       propertyPath: tentaclePrefab
       value: 
-      objectReference: {fileID: 1161235125}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2b62a9d27c2efb46b22d17227ff3c68, type: 3}
---- !u!1001 &8649895347425597081
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 331924043140346562, guid: 73866ffdf4e2c034eb4f5540c39548f1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.06194
-      objectReference: {fileID: 0}
-    - target: {fileID: 331924043140346562, guid: 73866ffdf4e2c034eb4f5540c39548f1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.61247
-      objectReference: {fileID: 0}
-    - target: {fileID: 331924043140346562, guid: 73866ffdf4e2c034eb4f5540c39548f1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 331924043140346562, guid: 73866ffdf4e2c034eb4f5540c39548f1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 331924043140346562, guid: 73866ffdf4e2c034eb4f5540c39548f1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 331924043140346562, guid: 73866ffdf4e2c034eb4f5540c39548f1, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 331924043140346562, guid: 73866ffdf4e2c034eb4f5540c39548f1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 331924043140346562, guid: 73866ffdf4e2c034eb4f5540c39548f1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 331924043140346562, guid: 73866ffdf4e2c034eb4f5540c39548f1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 331924043140346562, guid: 73866ffdf4e2c034eb4f5540c39548f1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 593758120754947739, guid: 73866ffdf4e2c034eb4f5540c39548f1, type: 3}
-      propertyPath: m_Name
-      value: tentacle
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 73866ffdf4e2c034eb4f5540c39548f1, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -8770,5 +8708,4 @@ SceneRoots:
   - {fileID: 911232047}
   - {fileID: 715195823}
   - {fileID: 8319031469023668142}
-  - {fileID: 8649895347425597081}
   - {fileID: 940458158}

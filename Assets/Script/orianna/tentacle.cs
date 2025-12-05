@@ -25,14 +25,14 @@ public class tentacle : MonoBehaviour
         {
             playerHealth.healthState(-damage); 
 
-            Destroy(gameObject);
+            Destroy(gameObject, lifetime);
             return;
         }
 
         if (collision.gameObject.layer == LayerMask.NameToLayer("Ground") ||
             collision.CompareTag("Obstacle"))
         {
-            Destroy(gameObject, 2);
+            Destroy(gameObject, lifetime);
         }
     }
 }
