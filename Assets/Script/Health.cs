@@ -8,6 +8,7 @@ public class Health : MonoBehaviour
 {
     public int currentHealth;
     public int maxHealth;
+    public DeathMenu deathMenu;
 
     public event Action<int> OnHealthChanged;
 
@@ -25,5 +26,16 @@ public class Health : MonoBehaviour
             Debug.Log("Health reached 0. Reloading scene.");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+        //if (currentHealth <= 0)
+        //{
+        //    Debug.Log("Health reached 0. Triggering DIE()");
+        //    Die();  
+        //}
     }
+
+    public void Die()
+    {
+        deathMenu.ShowDeathMenu();
+    }
+
 }
