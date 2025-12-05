@@ -3,21 +3,20 @@ using UnityEngine.SceneManagement;
 
 public class DeathMenu : MonoBehaviour
 {
-    public GameObject deathMenuUI; 
-    public static bool PlayerIsDead = false;
+    public GameObject deathMenuUI;
 
     void Start()
     {
-        deathMenuUI.SetActive(false); 
+        deathMenuUI.SetActive(false);
     }
 
     public void ShowDeathMenu()
     {
-        PlayerIsDead = true;
+        Debug.Log("Death menu activated!");
+
         deathMenuUI.SetActive(true);
         Time.timeScale = 0f;
 
-        
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
