@@ -13,9 +13,15 @@ public class wolfie_movement : MonoBehaviour
     private Vector2[] waypointPositions;
     private int currentPoint = 0;
     private bool isWaiting;
+    private Rigidbody2D rb;
+
+    // Expose waiting state so other scripts (like wolfieFight) can check it
+    public bool IsWaiting => isWaiting;
 
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
+
         if (waypointsParent == null || waypointsParent.childCount == 0)
         {
             Debug.LogError("wolfie_movement needs a waypointsParent with at least one child.");
@@ -48,9 +54,6 @@ public class wolfie_movement : MonoBehaviour
         {
             StartCoroutine(WaitAtPoint());
         }
-
-        if (debugLogs)
-            Debug.Log($"[wolfie_movement] moving to {targetPos} from {currentPos}");
     }
 
     IEnumerator WaitAtPoint()
