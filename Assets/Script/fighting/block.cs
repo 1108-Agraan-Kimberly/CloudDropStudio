@@ -2,42 +2,45 @@ using UnityEngine;
 
 public class block : MonoBehaviour
 {
-    public int currentHealth;
-    public int maxHealth;
+    public int currentHealth = 1; // Health of the hazard
+    public int maxHealth = 1;
+
     public spellbook SB;
-    private SpriteRenderer sr;
+
     private void Start()
     {
-        currentHealth = maxHealth;
-        sr = GetComponent<SpriteRenderer>();
+        currentHealth = maxHealth; // Initialize health
     }
 
-    public void ChangeHealth(int amount)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        currentHealth += amount;
-
-        if(SB.collected) //if spellbook is collected
+        if(SB.collected)
         {
-            if(amount < 0)
+            // Check if the colliding object is tagged as "Player"
+            if (collision.gameObject.CompareTag("Player"))
             {
-                StartCoroutine(Red());
+                Debug.Log("Hazard collided with the player.");
+
+                // Check if the player has a damage-dealing script (e.g., player_atk)
+                player_atk playerAttack = collision.gameObject.GetComponent<player_atk>();
+                if (playerAttack != null)
+                {
+                    TakeDamage(playerAttack.damage); // Take damage from the player
+                }
             }
-            if(currentHealth > maxHealth)
-            {
-                currentHealth = maxHealth;
-            }
-            else if (currentHealth <= 0)
-            {
-                Destroy(gameObject);
-            }   
         }
         
     }
-        
-    private System.Collections.IEnumerator Red()
+
+    public void TakeDamage(int damage)
     {
-        sr.color = Color.red;
-        yield return new WaitForSeconds(0.1f);
-        sr.color = Color.white;
+        currentHealth -= damage;
+
+        Debug.Log("Hazard took damage. Current health: " + currentHealth);
+
+        if (currentHealth <= 0)
+        {
+            Destroy(gameObject); // Destroy the hazard if health reaches 0
+        }
     }
 }

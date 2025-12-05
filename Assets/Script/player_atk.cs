@@ -15,6 +15,7 @@ public class player_atk : MonoBehaviour
     public float projectileSpeed = 10f; // Speed of the projectile
 
     private Movement movementScript;
+    //private spellbook book;
 
     private void Start()
     {
@@ -66,6 +67,20 @@ public class player_atk : MonoBehaviour
                     enemyHealth.ChangeHealth(-damage); // Apply damage to the enemy
                 }
             }
+
+           //if(spellbook.collected == true)
+           // {
+           //     Collider2D[] bookcases = Physics2D.OverlapCircleAll(range.position, attackRange, Hazard);
+           //     foreach (Collider2D bookcase in bookcases)
+           //     {
+           //         enemy_health enemyHealth = bookcase.GetComponent<enemy_health>();
+           //         if (enemyHealth != null)
+           //         {
+           //             enemyHealth.ChangeHealth(-damage); // Apply damage to the enemy
+           //         }
+           //     } 
+           // }
+            
 
             timer = cooldown;
         }

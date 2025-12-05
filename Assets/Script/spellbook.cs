@@ -2,7 +2,9 @@ using UnityEngine;
 
 public class spellbook : MonoBehaviour
 {
+    public GameObject booksprite;
     public bool collected;
+    
 
     private void Start()
     {
@@ -14,8 +16,9 @@ public class spellbook : MonoBehaviour
         {
             Debug.Log("Spellbook collected!");
             collected = true;
-            Destroy(gameObject);
+            booksprite.SetActive(false);
         }
     
     }
+
 }

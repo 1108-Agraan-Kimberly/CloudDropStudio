@@ -82,7 +82,7 @@ public class EnemyFollow : MonoBehaviour
         {
            
             rb.linearVelocity = Vector2.zero;
-            isChasing = true;
+            
         }
     }
 }

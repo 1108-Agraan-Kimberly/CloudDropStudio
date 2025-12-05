@@ -31,6 +31,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6958648515513916587}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4575680327891792448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 142971394257028713}
+  m_Layer: 7
+  m_Name: 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &142971394257028713
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4575680327891792448}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.9, y: 3.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1388452958835183381}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4888901047905989018
 GameObject:
   m_ObjectHideFlags: 0
@@ -46,8 +77,8 @@ GameObject:
   - component: {fileID: 916938239280555964}
   - component: {fileID: 3637801979282984701}
   - component: {fileID: 4684913974326745796}
-  - component: {fileID: 8449147746659473749}
-  - component: {fileID: 5030345185913203306}
+  - component: {fileID: 8933102149635108976}
+  - component: {fileID: 5364239683777744344}
   m_Layer: 7
   m_Name: boss_Wolfie
   m_TagString: Untagged
@@ -69,6 +100,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2779184092763642416}
+  - {fileID: 1388452958835183381}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6263351860862909668
@@ -266,7 +298,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8449147746659473749
+--- !u!114 &8933102149635108976
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -275,16 +307,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4888901047905989018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa2905f994a2de3439c025796dd9528c, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b844408bdcca4249897cd6147751cb7, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::tempFIGHT
-  damage: 1
-  attackPoint: {fileID: 2779184092763642416}
-  attackRange: 4
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 64
---- !u!114 &5030345185913203306
+  m_EditorClassIdentifier: Assembly-CSharp::wolfieFight
+--- !u!114 &5364239683777744344
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -293,14 +319,106 @@ MonoBehaviour:
   m_GameObject: {fileID: 4888901047905989018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14ae863dfb7f65147aee303de3e7792e, type: 3}
+  m_Script: {fileID: 11500000, guid: 176e956304b811643a489f247961d8c5, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::enemy_movement
-  speed: 5
-  detectRange: 4
-  attackPoint: {fileID: 2779184092763642416}
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  attackRange: 2
-  atkCooldown: 2
+  m_EditorClassIdentifier: Assembly-CSharp::wolfie_movement
+  waypointsParent: {fileID: 1388452958835183381}
+  movespeed: 7
+  waitTime: 1
+  loopWaypoints: 1
+--- !u!1 &5127877514619388948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5765922603373593064}
+  m_Layer: 7
+  m_Name: 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5765922603373593064
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5127877514619388948}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.4, y: -7.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1388452958835183381}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6477725763959675794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1388452958835183381}
+  m_Layer: 7
+  m_Name: Points
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1388452958835183381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6477725763959675794}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3065540218619808900}
+  - {fileID: 142971394257028713}
+  - {fileID: 5765922603373593064}
+  m_Father: {fileID: 6958648515513916587}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7355719026243670005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3065540218619808900}
+  m_Layer: 7
+  m_Name: 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3065540218619808900
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7355719026243670005}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17, y: 6.9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1388452958835183381}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

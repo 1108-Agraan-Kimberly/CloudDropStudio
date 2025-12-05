@@ -7,6 +7,7 @@ public class enemy_health : MonoBehaviour
     public GameObject potion;
 
     private SpriteRenderer sr;
+
     private void Start()
     {
         currentHealth = maxHealth;

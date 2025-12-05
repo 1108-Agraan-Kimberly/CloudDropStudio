@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 7257964125733037413}
   - component: {fileID: 97086940942247419}
   - component: {fileID: 480907228914308321}
-  - component: {fileID: 7707828442465979589}
   - component: {fileID: 2706675888607151899}
   - component: {fileID: 6043349502256507781}
   - component: {fileID: 3403332928599151365}
+  - component: {fileID: 197290966148205864}
   m_Layer: 7
   m_Name: test_Enemy
   m_TagString: Untagged
@@ -198,26 +198,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: -0.5885773, y: 5.529417}
   m_Radius: 13.8846245
---- !u!114 &7707828442465979589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5517007716254597380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14ae863dfb7f65147aee303de3e7792e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::enemy_movement
-  speed: 4
-  detectRange: 4
-  attackPoint: {fileID: 0}
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  attackRange: 2
-  atkCooldown: 2
 --- !u!95 &2706675888607151899
 Animator:
   serializedVersion: 7
@@ -257,7 +237,7 @@ MonoBehaviour:
   attackRange: 1
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!114 &3403332928599151365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,8 +250,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a58f50a5b332dc4286fe0a79b55ddb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::enemy_health
-  currentHealth: 7
-  maxHealth: 7
+  currentHealth: 8
+  maxHealth: 8
+  potion: {fileID: 5144280032783984577, guid: d38a234d928c4d54bba693c49adf2900, type: 3}
+--- !u!114 &197290966148205864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5517007716254597380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a43a9e4c371c5d44b9ab8c094016ede, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyFollow
+  speed: 5
+  chargeSpeed: 8
+  chargeDuration: 1
+  chargeCooldown: 3
 --- !u!1 &8021543569916709911
 GameObject:
   m_ObjectHideFlags: 0
